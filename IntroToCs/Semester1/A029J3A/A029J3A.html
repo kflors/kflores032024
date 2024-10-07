@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A029J3A</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color:thistle; 
+            color: rgb(182, 182, 182);
+        }
+
+        h1{
+            text-align: center;
+            text-decoration:underline;
+            text-shadow: 10px;
+        }
+
+        #div{
+            background-color: none;
+            height: 100px;
+            width: 100px;
+            margin-top: 10px;
+        }
+        #container{
+            position: relative;
+            margin: auto;
+            height: 792px;
+            width:1436px;
+            background-image: url(Images/Screen\ Shot\ 2023-11-14\ at\ 7.23.29\ PM.png);
+        }
+
+        #PomPom{
+            position: absolute;
+            top: 320px;
+            left: 1023px;
+            background-image:url(Images/PomPom_501x368.webp); 
+            background-repeat: no-repeat;
+            height:  501px;
+            width:368px;
+
+        }
+
+        #Pocchaco{
+            position: absolute;
+            top: 320px;
+            left: 300px;
+            background-image:url(Images/pocchaco.png);
+            background-repeat: no-repeat;
+            height: 600px;
+            width:346px;
+        }
+
+        #Kuromi{
+            position: absolute;
+            top: 380px;
+            left: 40px;
+            background-image:url(Images/kuromi_1_400x429.webp);
+            background-repeat: no-repeat;
+            height: 400px;
+            width:439px;
+        }
+    </style>
+    
+
+    <h1>A029J3A - Absolue within Relative Div</h1> 
+
+    <div id="container">
+        <div id="Pocchaco"></div>
+        <div id="Kuromi"></div>
+        <div id="PomPom"></div>
+    </div>
+</body>
+</html>

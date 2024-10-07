@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8 Ball Answers Array </title>
+<style>
+    body{
+        background-color:hotpink;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    #answers{
+        background-color: aliceblue;
+        width: 10rem;
+        height: 10rem;
+        border: 1px solid black;
+        padding: 1rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+</style>
+
+</head>
+<body>
+    <h1>Magic 8 Ball Answers Array</h1>
+
+    <div id="answers">
+    </div>
+
+    <script>
+        // Create a variable (Array)
+
+            let answers =[];
+
+        //Array items 
+
+            answers[0] = "It is certain";
+            answers[1] = "It is decidedly so";
+            answers[2] = "Without a doubt"; 
+            answers[3] ="Yes definitely";
+            answers[4] ="You may rely on it";
+            answers[5]="As I see, yes";
+            answers[6]="Mostly likely";
+            answers[7]="Outlook good"; 
+            answers[8]="Yes";
+            answers[9]="Signs point to yes";
+
+        //Test 
+        //window.alert("A list of answers:" + answers);
+        //window.alert("Total number of answers: " + answer); 
+
+        //Generate a random number 
+            let randomArrayIndex = Math.floor(Math.random() * answers.length); 
+
+            window.alert (answers[randomArrayIndex]);
+
+        //Update the answers div
+            let magic8BallDiv; 
+            magic8BallDiv = window.document.querySelector('#answers'); 
+            magic8BallDiv.innerHTML = answers[randomArrayIndex]; 
+
+    </script>
+</body>
+</html>3

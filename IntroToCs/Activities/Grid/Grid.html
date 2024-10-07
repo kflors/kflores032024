@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid </title>
+    <style>
+        #container{
+            margin: auto;
+            max-width: 1000px;
+        }
+
+        #wrapper{
+            background-color: rgb(77,27,98);
+            gap: 5px 5px;
+            display: grid;
+            grid-template-areas:
+            "main main arti artd"
+            "main main artt artq"
+            "nav sect sect asid"
+            "sec sec foot asid";
+        }
+
+        main{
+            min-height: 200px;
+            background-color: rgb(149,26,128); 
+            grid-area:main;
+            border: 1.5px solid black;
+        }
+
+        #article1{
+            background-color: rgb(101,37,130);
+            min-height: 200px;
+            grid-area:arti;
+            border: 1.5px solid black;
+        }
+
+        #article2{
+            background-color: rgb(150,26,128);
+            min-height: 200px;
+            grid-area:artd;
+            border: 1.5px solid black;
+        }
+
+        #article3{
+            background-color: rgb(133,80,156);
+            min-height: 200px;
+            grid-area:artt;
+            border: 1.5px solid black;
+        }
+        
+        #article4{
+            background-color: rgb(170,73,153);
+            min-height: 200px;
+            grid-area:artq;
+            border: 1.5px solid black;
+        }
+
+        nav{
+            min-height: 200px;
+            background-color: rgb(163,123,183);
+            grid-area:nav;
+            border: 1.5px solid black;
+        }
+
+        #section01{
+            min-height: 200px;
+            background-color: rgb(192,117,179);
+            grid-area:sect;
+            border: 1.5px solid black;
+
+        }
+
+        #section02{
+            min-height: 200px;
+            background-color: rgb(192,117,179);
+            grid-area:sec;
+            border: 1.5px solid black;
+
+        }
+        
+        #footer{
+            min-height: 200px;
+            background-color: rgb(212,164,204);
+            grid-area:foot;
+            border: 1.5px solid black;
+            
+        }
+
+        #aside{
+            min-height: 200px;
+            background-color: rgb(217,161,191);
+            grid-area:asid;
+            border: 1.5px solid black;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+    <div id="wrapper">
+        <main>Main</main>
+        <article id="article1"> Article I </article>
+        <article id="article2"> Article II</article>
+        <article id="article3">Article III</article>
+        <article id="article4">Article IV</article>
+        <nav>Nav</nav>
+        <section id="section01">section01</section>
+        <section id="section02">section02</section>
+        <aside id="aside">aside</aside>
+        <footer id="footer">footer</footer>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Demo</title>
+
+
+<style>
+    body
+    {
+        font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    }
+h1
+    {text-align:center;}
+   
+div
+{
+    color:white;
+    margin:auto;
+    margin-bottom:40px;
+    padding:10px;
+}
+div.box
+{
+    width:200px;
+    height:200px;
+    background-color:steelblue;
+}
+div#one
+{
+    background-color: blue;
+    transition: all 2s;
+}
+
+div#one:hover{
+    background-color: darkorchid;
+    border-radius: 35px 0px 35px 0px;
+        /* hortizontial offset, vertical offset  */
+    box-shadow: -55px -55px 50px 10px black;
+    transform: translate(200px, 10px) rotate(360deg);
+}
+div#two
+{
+background-color: palevioletred;
+transition: all 2s;
+}
+
+div#two:hover{
+    background-color:indianred;
+    border-radius: 50%;
+    box-shadow: inset 25px 5px 15px black;
+    transform: scale(.25);
+}
+
+div#three
+{
+    background-color: lavenderblush;
+    transition: all 2s;
+}
+
+div#three:hover{
+    background-color: gray;
+    transform: rotate(360deg);
+}
+</style>
+
+</head>
+
+<body>
+<h1> Demo</h1>
+
+<div class="box" id="one">
+</div>
+
+
+<div class="box" id="two">
+</div>
+
+
+<div class="box" id="three">
+</div>
+
+
+
+</body>
+</html>

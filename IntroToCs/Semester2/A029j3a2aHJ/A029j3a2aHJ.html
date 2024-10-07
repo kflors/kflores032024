@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A029j3a2aHJ</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(49, 16, 66);
+            color: aliceblue;
+            background-image: url(Images/247ee3fb9b9a173b360e696f04a653b4ad82636d.jpg);
+        }
+
+        div{
+            margin: auto;
+
+        }
+
+        h1, h2{
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        #niko{
+            transform: scale(2.25);
+            background-image: url(Images/niko.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 200px;
+            width: 200px;
+            position: relative;
+            top: 240px;
+            left: 120px;
+            
+        }
+
+        .nikogrow{
+            animation-name: grow;
+            animation-duration: .25;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+
+        @keyframes grow{
+            from{
+                transform: scale(.75);
+            }
+
+            to{
+                transform: scale(1);
+            }
+        }
+        
+        #light{
+            background-image: url(Images/light.png);
+            background-size: contain;
+            height: 200px;
+            width: 200px;
+            position: relative;
+            top: 240px;
+            left: 120px;
+        }
+
+        .turnlight{
+            animation-name: turnlight;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: 3;
+        }
+
+        @keyframes turnlight{
+            from{
+                transform: rotate(10deg);
+            }
+
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    
+    </style>
+    <h1>A029j3a2aHJ</h1>
+    <h2>JavaScript Toggle Animation Class</h2>
+
+    <div id="niko" onclick="animateNiko()" class=""> </div>
+    <div id="light" onclick="turnLight()" class=""></div>
+
+
+
+    <script>
+
+        function animateNiko()
+            {
+        let niko;
+
+        niko = window.document.querySelector('#niko');
+        
+        niko.classList.toggle('nikogrow');		
+            }	
+        function turnLight(){
+        let gear;		
+            gear = window.document.querySelector('#light');
+            gear.classList.toggle('turnlight');		
+        }	
+            </script>
+        
+</body>
+</html>

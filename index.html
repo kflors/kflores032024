@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karen Flores - Portfolio</title>
+</head>
+<body>
+    <style>
+
+        :root{
+            --color-primary:#3B4963;
+            --color-secondary: #1C222F;
+            --color-tertiary: #5C5C67;
+}x
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+
+        .container{
+            background-color:#c6c4c8b2;
+            min-height: 10rem;
+            max-width: 120rem;
+            margin: auto; 
+            padding: 1rem 3rem 1rem 3rem;
+            border-radius: 20px;
+            padding: 1rem ;
+            border-radius: 1.5rem;
+            position: relative;
+            
+        }
+
+        body{
+            background-image: url(Images/Screenshot\ 2024-09-20\ at\ 10.44.08\ AM.png);
+            background-attachment: fixed;
+            line-height: 1.7;
+            padding: 1rem 3rem 1rem 3rem;
+            margin-top: 1rem;
+            
+        }
+
+        #pageheader
+        { 
+            background-color: #ffffff55;
+            min-height: 200px; 
+            padding: 1rem;
+            border-radius: 1.5rem 1.5rem 0 0;
+            background-size: cover;
+            position: relative;
+        }
+
+        #logo{
+            width: 100px;
+            height: 100px;
+            background: url(Images/starlogo.png);
+            background-size: cover;
+            position: absolute;
+            top: -40px;
+            border-radius: 50%;
+            left: calc(50% - 50px);
+            transition: all 2s;
+        }
+
+        #craig{
+                background-image: url(Images/crcaig-removebg-preview.png);
+                width: 100px;
+                height: 100px;
+                background-size: cover;
+                position: absolute;
+                top:135px;
+                left: -35px;
+                border-radius: 50%;
+                }
+
+
+        img{
+            max-width: 40%;
+            margin:auto;
+            display: block;
+            size: 5px;
+}
+
+        p{
+            text-align: center;
+        }
+
+
+
+        #pagenav{
+            min-height: 40px;
+            width: 300px;
+            display: flex;
+            align-content: center;
+            justify-content: space-evenly;
+            position: absolute;
+            bottom: 0px;
+            left: calc(50% - 150px);
+
+        }
+
+
+        blockquote{
+            color: whitesmoke;
+            text-align: center;
+            font-size: 24px;
+            bottom: -10;
+            font-weight: bolder;
+            text-shadow: 2px 2px 2px black;
+            font-family:cursive;
+}
+
+
+        #media{
+            min-height: 10px;
+            background-color:#3B4963 ;
+            padding: 1rem;
+            padding: 1rem;
+            color: aliceblue;
+            text-align: center;
+        }
+
+        a{
+            color: rgb(204, 203, 206);
+        }
+
+        a:hover{
+            color: rgba(204, 203, 206, 0.632)
+        }
+
+        #auto{
+            margin: auto;
+        }
+
+        #career{
+            min-height: 200px;
+            background-color:#3B4963; 
+            padding: 1rem;
+        }
+
+        #pagecontent{
+            min-height: 200px;
+            background-color:#3B4963;
+            padding: 1rem;
+            align-items: center;
+        }
+
+
+        #semesterI{
+            min-height: 200px;
+            background-color:#3B4963;
+            padding: 1rem;
+        } 
+
+        #semesterII{
+            min-height: 200px;
+            background-color:#3B4963;
+            padding: 1rem;
+        } 
+
+        #pagefooter{
+            min-height: 200px;
+            background-color:#3B4963; 
+            padding: 1rem;
+            text-align: center;
+
+        }
+
+        #pagefooter, #subfooter, .container{
+            min-height: 2rem;
+        }
+
+        #subfooter{
+            min-height: 200px;
+            background-color:#3B4963; 
+            padding: 1rem;
+            text-align: center;
+        } 
+
+        #topanchor{
+            width: 25px;
+            min-height: 25px;
+            background-color: aliceblue;
+            border: 1px solid black;
+            padding: 1rem;
+            text-align: center;
+            position: fix;
+            right: 20px;
+            bottom: 20px;
+            border-radius:50% ;
+        }
+
+
+
+@media screen and (min-width:900px){
+            #logo{
+                left: -2%;
+            }
+
+            #media{
+                height: 250px ;
+            }
+
+            #pagenav{
+                top: 0px;
+                right: 0px;
+                left: auto;
+                bottom: auto;
+                background-color: none;
+            }
+
+        }
+
+    </style>
+
+
+    <!-- Name anchor to navigate to the top of the page -->
+    <a name="topanchor"></a>
+
+
+<!-- begin pageheader -->
+<header id="pageheader">
+    <header id="pageheaer">
+        <div class="container">
+            <div id="wrapper">
+        <div id="logo"></div>
+
+        <nav id="pagenav"> 
+            <a href="#career">Career </a> |
+            <a href="#semesterI"> Semester I</a> | 
+            <a href="#semesterII">Semester II</a>
+    </nav>
+    <blockquote> 
+        "All that we see or seem is but a dream within a dream."
+    </blockquote> 
+
+    </div>
+    </header>
+
+    <!-- end pageheader -->
+    
+    <!-- begin media -->
+        <section id="media">
+        <audio controls> 
+            <source src="Audio/DECEITS - Mi Amor Mi Vampira.mp3" type="audio/DECEITS - Mi Amor Mi Vampira.mp3">
+            <source src="Audio/DECEITS - Mi Amor Mi Vampira.mp3" type="audio/mpeg"> 
+        </audio>
+        </section>
+    <!-- end media -->
+    
+    <!-- begin career -->
+        <section id="career">
+        <div class="container">
+        <a name="career"></a>
+        <h2>Career</h2>
+    </div>
+    </section>
+    <!-- end career -->
+    
+    <!-- begin pagecontent -->
+        <main id="pagecontent">
+        <div class="container">
+            <h1>Karen Flores</h1>
+            <p>
+                Hi and welcome to my portfolio. I'm currently a junior and taking Web App Develpment.  A little about me is that a like stars and listening to music. EPS I listened  to recently were The Grunk by Last Pride and The Bancroft Sessions by The Stallywags. I like South Park and my favorite character is Craig. 
+            </p>
+        </div>
+        </main>
+    <!-- end pagecontent -->
+
+    <!-- begin semesterI -->
+            <section id="semesterI">
+            <div class="container">
+            <a name="semesterI"></a>
+            <h2>SemesterI</h2>
+        </div>
+        </section>
+    <!-- end semesterII -->
+    
+    <!-- begin semester -->
+        <section id="semesterII">
+        <div class="container">
+        <a name="semesterII"></a>
+        <h2>Semester2</h2>
+    </div>
+    </section>
+    <!-- end semester2 -->
+    
+    <!-- begin pagefooter -->
+    <footer id="pagefooter">
+    <div class="container">
+        <a href="">chago</a> |
+        <a href="https://colordesigner.io/" target="new">colorscheme</a> | 
+        <a href="https://coalingahuron.aeries.net/" target="new">Aeries</a> | 
+        <a href="https://chs.chusd.org/o/chs" target="new">CHS</a> | 
+        <a href="https://mycareertech.com/" target="new">mycareertech</a> | 
+        <a href="https://classroom.google.com/" target="new">Classroom</a> | 
+        <a href="https://codepip.com/" target="new">Codepip</a> | 
+        <a href="https://minga.io/" target="new">Minga</a> 
+</div> 
+    </div>
+    </footer>
+    <!-- end pagefooter -->
+    
+    <!-- begin subfooter -->
+    <footer id="subfooter"> 
+        <div class="container">
+            <div id="craig"></div>
+        
+            <a href="https://southpark.cc.com/" target="new"> South Park Studios</a> |
+            <a href="https://pudding.cool/2021/10/judge-my-music/" target="new"> Bad Music</a> |
+            <a href="https://theshfl.com/" target="new">Shfl</a> |
+            <a href="https://spotistats.app/" target="new"> Stats.fm</a>
+            
+        </div>
+        <p>
+            &star;; Karen Flores  -
+
+            <script>
+                window.document.write(new Date().getFullYear());
+            </script>
+        </p>
+    </footer>
+    <!--  end subfooter -->
+    
+
+    <div id="top">
+        <a href="#topanchor">Top</a>
+    </div>
+</body>
+</html>
+
+
+
+</head>
+<body>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Areas (OYO)</title>
+</head>
+<style>
+    #container{
+        margin: auto;
+        border: 2rem solid rgb(223, 223, 223);
+        max-width: 1200px;
+    }
+
+    #wrapper{
+            gap: 10px;;
+            background-color: rgb(162, 164, 167);
+            display: grid;
+            grid-template-areas: 
+            "pageheader pageheader pageheader pageheader pageheader pageheader pageheader pageheader pageheader pageheader pageheader pageheader"
+            "mainnav mainnav mainnav mainnav mainnav mainnav mainnav mainnav mainnav mainnav mainnav mainnav"
+            "intromedia intromedia intromedia intromedia intromedia intromedia intromedia intromedia intromedia intromedia intromedia intromedia" 
+            "pagemain pagemain pagemain pagemain pagemain pagemain pageaside pageaside pageaside pageaside pageaside pageaside"
+            "card001 card001 card001 card001 card002 card002 card002 card002 card003 card003 card003 card003"
+            "pagefooter pagefooter pagefooter pagefooter pagefooter pagefooter pagefooter pagefooter pagefooter pagefooter pagefooter pagefooter"
+            "pagedetails pagedetails pagedetails pagedetails pagedetails pagedetails pagedetails pagedetails pagedetails pagedetails pagedetails pagedetails";
+        }
+
+        #pageheader{
+            background-color: rgb(188, 172, 203);
+            min-height: 90px;
+            padding: 1rem;
+            grid-area: pageheader;
+        }
+
+        #mainnav{
+            background-color: rgb(238,233,239);
+            min-height: 55px;
+            padding: 1rem;
+            grid-area: mainnav;
+        }
+
+        #intromedia{
+            background-color: rgb(194,178,184);
+            min-height: 250px;
+            padding: 1rem;
+            grid-area: intromedia;
+        }
+
+        #pagemain{
+            background-color: rgb(134,98,114);
+            min-height: 350px;
+            padding: 1rem;
+            grid-area: pagemain;
+        }
+
+
+        #pageaside{
+            background-color: rgb(180,209,226);
+            min-height:350px; 
+            padding: 1rem;
+            grid-area: pageaside;
+        }
+
+        #card001{
+            background-color: rgb(131,149,157);
+            min-height: 150px;
+            padding: 1rem;
+            grid-area: card001;
+        }
+
+        #card002{
+            background-color: rgb(238,244,244);
+            min-height: 150px;
+            padding: 1rem;
+            grid-area: card002;
+            }
+
+            #card003{
+                background-color: rgb(217,218,212);
+                min-height: 150px;
+                padding: 1rem;
+                grid-area: card003;
+            }
+
+            #pagefooter{
+                background-color: rgb(163,171,162);
+                min-height: 85px;
+                padding: 1rem;
+                grid-area: pagefooter;
+            }
+
+            #pagedetails{
+                background-color: rgb(138, 132, 124);
+                min-height: 85px;
+                padding: 1rem;
+                grid-area: pagedetails;
+
+            }
+</style>
+<body>
+    <div id="container">
+        <div id="wrapper">
+        <header id="pageheader">pageheader</header>
+        <div id="intromedia">intromedia</div>
+        <nav id="mainnav">mainnav</nav>
+        <main id="pagemain">pagemain</main>
+        <aside id="pageaside">pageaside</aside>
+        <section id="card001">card001</section>
+        <section id="card002">card002</section>
+        <section id="card003">card003</section>
+        <footer id="pagefooter">pagefooter</footer>
+        <footer id="pagedetails">pagedetails</footer>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A029J3A2A</title>
+</head>
+<body>
+    <style> 
+    
+    body{
+            background-color:gray;
+            color: white;
+            text-decoration: underline;
+        }
+        h1, h2{
+            text-align: center;
+            text-transform: lowercase;
+        }
+
+div
+{
+	margin:auto;	
+	margin-top:50px;
+	padding:20px;
+	width: 200px;
+	height:50px;
+	text-align: center;
+	border:2px solid rgb(255, 255, 255);
+}
+
+#one
+{
+	text-align: center;
+	font-size:15px;
+	background-color: rgb(114, 114, 114);
+	animation-name:changecolor;
+	animation-duration:5s;  
+	animation-iteration-count:4;  
+}
+
+	@keyframes changecolor
+{
+	from
+	{
+		background-color: #504746;
+	}
+
+	to
+	{
+		background-color: #cb7984;
+	}
+	
+}
+#two
+{
+	text-align: center;
+	font-size:15px;
+	background-color: #B6244F;
+	animation-name:changeheight;
+	animation-duration: 2s;
+	animation-delay: 1s;  
+	animation-fill-mode: backwards; 
+	animation-iteration-count:4;  
+}
+
+	@keyframes changeheight
+{
+	from
+	{
+		height:10px;		
+	}
+
+	to
+	{
+		height:200px;
+	}
+}
+
+#three
+{
+	text-align: center;
+	color: rgb(192, 192, 192);
+	font-size:15px;
+	width:150px;
+	height:150px;
+	background-color: #FBB7C0;
+	animation-name:changerotation;
+	animation-duration:2s;
+	animation-iteration-count:6; 	
+}
+
+	@keyframes changerotation
+{
+	from
+	{
+		transform:rotate(0deg);
+	}
+
+	to
+	{
+		transform:rotate(-360deg);
+	}
+}
+
+#four
+{
+	text-align: center;
+	font-size:15px;
+	width:250px;
+	height:250px;
+	animation-name:changerotation;
+	animation-duration:2s;
+	animation-iteration-count:6; 	
+}
+
+	@keyframes changerotation
+{
+	from
+	{
+		transform:rotate(0deg);
+	}
+
+	to
+	{
+		transform:rotate(360deg);
+	}
+}
+
+#three
+{	
+	text-align: center;
+	font-size:15px;
+	background-color: #B89685;
+	width:100px;
+	height:100px;
+	animation-name:changeradius;
+	animation-duration:3s;
+	animation-fill-mode: forwards;
+	animation-iteration-count:5;  
+}
+
+	@keyframes changeradius
+{
+	from
+	{
+		border-radius:0%;
+		padding:5px;	
+	}
+
+	to
+	{
+		border-radius:100%;
+		padding:70px;
+	}
+}
+
+#four
+{
+	text-align: center;
+	font-size:15px;
+	background-color:#BFADA3;
+	animation-name:translateleftup;
+	animation-duration:3s;
+	animation-direction:alternate;  
+	animation-iteration-count:6;  
+}
+
+	@keyframes translateleftup
+{
+	from
+	{
+		transform:translate(0px, 0px);
+	}
+
+	to
+	{
+		transform:translate(600px, -600px);
+	}
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>A029J3A2A </h1>
+    <h2> Keyframes Animations From To </h2>
+    <div class="box" id="one"></div>
+    <div class="box" id="two">  </div>
+    <div class="box" id="three"></div>
+    <div class="box" id="four">  </div>
+</body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Multiplication Table</title>
+   <style>
+
+h1{
+        text-align:center;
+    }
+    table, th, td{
+        border:1px solid black;
+        padding:1rem;
+    }
+    th{
+        background-color: rgba(106, 77, 194, 0.662);
+    }
+    tr:hover{
+        background-color: rgba(101, 101, 220, 0);
+    }
+    td:hover{
+        background-color: rgba(59, 120, 242, 0.761);
+    }
+
+   </style>
+</head>
+<body>
+   <h1>Multiplication Table</h1>
+
+
+   <!-- <table>
+       <tr>
+           <th>1</th>
+           <th>2</th>
+       </tr>
+
+
+       <tr>
+           <td>3</td>
+           <td>4</td>
+       <tr>
+
+
+   </table> -->
+
+
+   <script>
+
+let range; 
+
+range = window.prompt('Enter the range to multiply');
+
+
+
+// JavaScript Math
+console.log("Hello World!");
+console.log(2+2);
+console.log(10-5);
+console.log(5*5);
+console.log(20/4);
+console.log(2 ** 3); // squared
+
+// Setup Table
+window.document.write('<table>');
+    document.write('<tr>');
+    document.write('<th> x </th>');
+// Create Horizontal Factor row (table headers)
+for(let x = 1; x<=range ; x++)
+{
+    document.write('<th>' + x + '</th>');
+}
+
+// Create Vertical Factor Column (table headers)
+//variable ; condition (less than or equal to); increment ps..i++ for running and adding 1 everytime it runs
+for(let i =1 ;i<=range; i++){
+    document.write('<tr>')
+        // new row everytime code runs which makes it vertical |
+    document.write('<th>' + i + '</th>');
+
+        //create another horizontal factor within rows
+        for(let z = 1; z<=range ; z++){
+            document.write('<td>' + i*z + '</td>');
+            //td is table data
+                
+        }
+    //close the row
+    document.write('</tr>')
+}
+
+   </script>
+</body>
+</html>
+
+
+
+
+
+

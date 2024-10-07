@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap" rel="stylesheet">
+
+    <title>Karen Flores - Portfolio</title>
+    <style>
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+h1{
+    text-align: center;
+}
+
+        body
+        {
+            background-image: url(Images/Screen\ Shot\ 2023-11-04\ at\ 11.56.05\ PM.png);
+            background-attachment: fixed;
+            background-color: #1a1a1a;
+            color: aliceblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            line-height: 1.7;
+            padding: 1rem;
+            margin-top: 1rem;
+            overscroll-behavior: none;
+        }
+
+        #pageheader
+        {
+            background-image: url(Images/bc225874af65d7b7b65f97b4837ce24b.jpg);
+            min-height: 150px;
+            padding: 1rem;
+            border-radius: 1.5rem 1.5rem 0 0;
+            background-size: cover;
+            position: relative;
+        }
+
+        #container
+        {
+            width: 90%;
+            background-color: rgba(33, 33, 42, 0.703);
+            width: 90%;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            border-radius: 20px;
+            margin: 0 auto;
+            padding: 2rem;
+            max-width: 1200px;
+            border-radius: 1.5rem;
+        }
+
+        #logo{
+            width: 190px;
+            height: 190px;
+            box-sizing: border-box;
+            position: relative;
+            border-radius: 50%;
+            transform: rotate(-6deg);
+            padding: 1.5px;
+            top: -92px;
+            left: -56px;
+            background-image: url(Images/e33a02c1b0dde095d028b0d918a24e54-removebg-preview.png);
+            background-size: cover;
+            animation-name: slidein;
+            animation-duration: 3s;
+            animation-iteration-count:infinite;
+        }
+
+        #logo:hover{
+            transform:translate(50px, 120px);
+            animation-duration:1s;
+        }
+
+        #container:hover
+        {
+            box-shadow: rgba(90, 90, 90, 0.362) 0px 0px 10px 10px;
+        }
+
+
+
+        #pagenav{
+            background-color: rgba(10, 14, 19, 0.768);
+            padding: 1rem;
+            color: aliceblue;
+            border-top: 3px rgb(26,36,45);
+            border-bottom: 3px rgb(26,36,45);
+}
+
+        #wrapper
+        {
+            background-color: rgba(56, 57, 61, 0.884)  ;
+            border-radius: 1.9rem;
+            margin: 0 auto;
+        }
+
+
+        #career{
+            background-color: rgba(51, 57, 77, 0.524);
+            color: whitesmoke;
+            padding: 1rem;
+            min-height: 200px;
+}
+
+        blockquote{
+            color: whitesmoke;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bolder;
+            text-shadow: 2px 2px 2px black;
+            font-family:cursive;
+}
+
+        #media{
+            min-height: 250px;
+            padding: 1rem;
+            background-color: rgb(33,41,68);
+            padding: 1rem;
+            color: aliceblue;
+            text-align: center;
+}
+
+iframe{
+            width: 80%;
+            aspect-ratio: 16/9;
+            margin:auto;
+            display: block;
+}
+
+        #quote{
+            color: whitesmoke;
+            text-align: right;
+            text-shadow: 2px 2px 2px gray;
+            width: 80%;
+            margin: auto;
+            font-family:initial;
+}
+
+        #pagemain{
+            min-height: 250px;
+            background-color: rgb(42,51,79);
+            padding:1rem;
+}
+
+        img{
+            max-width: 40%;
+            margin:auto;
+            display: block;
+}
+
+        .semesters{
+            background-color: #ffffff7d;
+            min-height: 200px;
+            padding: 1rem;
+            color: black;
+            border: 3px solid gray ;
+            text-align: center;
+            font-family:cursive;
+}
+
+        a:hover{
+            text-shadow: 2px;
+            color: rgba(220, 220, 220, 0.432);
+}
+
+        a{
+            color: whitesmoke;
+}
+        #tag:hover{
+            font-size: large;
+            color: gray;
+}
+
+        #pagefooter{
+            background-color:#535C6C;
+            color: darkgray;
+            border-color: black;
+            padding: 1rem;
+            text-align: center;
+}
+    
+        #subfooter
+        {
+            color: white;
+            border-color: black;
+            border-width: .1rem;
+            border-style: solid;
+            padding: 1rem;            
+            margin: auto;
+            text-align: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        #flexbox001{    
+            display:flex; 
+            flex-direction: column;}
+
+            #semester, #semester2{
+                flex: 1;
+            }
+
+            @media screen and (min-width:700px) {
+                #flexbox001{
+                    flex-direction: row;
+                }
+            }
+
+            
+    
+
+        #subfooterlogo{
+            width: 130px;
+            height: 120px;
+            background-color: transparent;
+            box-sizing: border-box;
+            position: relative;
+            border-radius: 50%;
+            padding: 5px;
+            top: 80px;
+            left: -65px;
+            background-image: url(Images/7d5c0535b9cdadbf6e859f6e407bca69-removebg-preview.png);
+            background-size: cover;
+}
+
+#subfooterlogo:hover{
+    scroll-behavior: auto;
+}
+
+
+p{
+    text-align: center;
+    font: 1em sans-serif;
+}
+
+    </style>
+</head>
+<body>
+</head>
+<body>
+    <div id="container">
+        <div id="wrapper"> 
+            <header id="pageheaer">
+                <div id="logo">
+                    
+                </div>
+                <blockquote> 
+                    "Can a heart still break once its stopped beating?"
+                </blockquote>
+                    <p id="quote">
+                        -Tim Burton
+                    </p>
+            </header>
+
+            <nav id="pagenav"> 
+                <a href="#career">Career |</a>
+                <a href="#semester1"> Semester I</a> | 
+                <a href="#semester2">Semester II</a>
+            </nav>
+
+            <div id="media"> 
+                <audio controls> 
+                    <source src="Audio/Victors Piano Solo - Tim Burtons Corpse Bride (HD Piano Cover Movie Soundtrack) [TubeRipper.com].mp4" type="audio/Victors Piano Solo - Tim Burtons Corpse Bride (HD Piano Cover Movie Soundtrack) [TubeRipper.com].mp4">
+                    <source src="Audio/Victors Piano Solo - Tim Burtons Corpse Bride (HD Piano Cover Movie Soundtrack) [TubeRipper.com].mp4" type="audio/mpeg"> 
+                </audio>
+                
+            </div>
+
+                <main id="pagemain">
+                    <h1> Karen Flores - Portfolio </h1>
+                    <img src="Images/3e74571bb11aa7c13a38076291436196.gif" alt="pocchaco"/>
+                    <p>
+                        Hi welcome to my portfolio. A little bit about me is that I enjoy listening to music and being able to play instruments. I like stars as well. 
+                    </p>
+
+                    
+
+                </main>
+
+                <section id="career">
+                    <h2>Career</h2>
+
+                    <a name ="career"></a>
+
+                    <ul>
+                        <li>
+                            <a href="Career/Karen Flores - Career Action Plan Worksheet.pdf">Career Action Plan</a>
+                        </li>
+                    </ul>
+                    
+                </section>
+
+<div id="flexbox001">
+                        <section id="semesterI" class="semesters">
+                            <h2>semester I</h2>
+                            <a name ="semester1"> </a>
+                            
+                                <a href="Semester1/A001JS/A001JS.html"> A001JS </a> <br />
+                                <a href="Semester1/A002JS/A002JS.html">A002JS</a> <br /> 
+                                <a href="Semester1/A003JS/A003JS.html"> A003JS</a> <br /> 
+                                <a href="Semester1/A004JS/A004JS.html"> A004JS</a> <br /> 
+                                <a href="Semester1/A005JS/A005JS.html"> A005JS </a> <br /> 
+                                <a href="Semester1/A006JS/A006JS.html">A006JS</a> <br /> 
+                                <a href="Activities/ResponsiveWebDesign2/ResponsiveWebDesign2.html">Responsive Web Design</a>  <br /> 
+                                <a href="Semester1/A029JS/A029JS.html">A029JS</a> <br /> 
+                                <a href="Semester1/A029J3A/A029J3A.html">A029J3A</a> <br />
+                                <a href="Activities/Popsicle/popsicle.html"> Popsicle</a> <br />
+                                
+                            </section>
+    
+                        <section id= "semesterII" class="semesters">
+                            <h2>semester II</h2> 
+                    
+                            <a name ="semester2"> </a>
+                            <a href="Demos/Multipcationforloop/multpicationforloop.html"> Multipcation For Loop</a> <br />
+                            <a href="Demos/MultpicationforloopAdvance/MultpicationforloopAdvance.html"> Multipcation For Loop Advance </a> <br />
+                            <a href="Semester2/A029G8/A029G8.html"> A029G8</a> <br />
+                            <a href="Semester2/A029J3A2/A029J3A2.html"> A029J3A2</a>  <br />
+                            <a href="Semester2/A029J3A2GRFX/A029J3A2GRFX.html"> A029J3A2GRFX</a> <br />
+                            <a href="Semester2/A029J3A2A/A029J3A2A.html"> A029J3A2A </a> <br/> 
+                            <a href="Semester2/A029J3A2AGRPHX/A029J3A2AGRPHX.html"> A029J3A2AGRPHX</a> <br />
+                            <a href="Semester2/A029j3a2aH/A029j3a2aH.html"> A029j3a2aH </a> <br/>
+                            <a href="Semester2/A029j3a2aHJ/A029j3a2aHJ.html">A029j3a2aHJ </a> <br/>
+                            <a href="Activities/RandomNumbersGenerator/randomnumbersgeneratorlist.html"> Random Numbers Generator</a> <br/>
+                            <a href="Demos/CSSGridarea001/CSSGridarea001.html"> CSSGridArea001</a> <br />
+                            <a href="Activities/RandomBugGenerator/RandomBugGenerator.html"> Random Bug Generator</a> <br />
+                            <a href="Activities/GridAreasII/gridareas.html"> Grid Areas II (OYO)</a> <br /> 
+                            <a href="Demos/CSSMediasQueriesFlexbox/CSSMediasQueriesFlexbox.html">Grid Areas Media Queries</a> <br/>
+                            <a href="Activities/Flex/Flex.html">Flex Layout</a> <br/> 
+                            <a href="Activities/Grid/Grid.html"> Grid Layout</a> <br/> 
+                            <a href="Semester2/A004DEX2/A004DEX2.jpg">A004DEX2</a> <br/>
+                            <a href="Demos/RandomColorBox/RandomColorBox.html">setInterval</a> <br />
+                            <a href="Activities/Magic8Ball/Magic8Ball.html"> Magic 8 Ball</a> <br /> 
+                            <a href="Projects/CSCNYCProject/index.html">New York City Project</a> <br />
+                            <a href="Projects/BusinessProject/index.html">Hamburger Menu</a> <br />
+                            
+    
+</div>
+
+
+                </section>
+
+                <footer id="pagefooter">
+                        <a href="https://coalingahuron.aeries.net/">Aeries</a> | 
+                        <a href="https://chagoyan.com/">Chagoyan</a> | 
+                        <a href="https://classroom.google.com/u/0/h">Classroom</a> | 
+                        <a href="https://chsserver01.org/chaggy.net/colortheory/colorscheme2/index-en.html">Color Scheme </a>| 
+                        <a href="https://go.weareimago.com/">Imago</a> | 
+                        <a href="https://app.listenwise.com/students">Listenwise</a> |
+                        <a href="https://app.minga.io/">Minga</a> 
+
+
+                </footer>
+
+                <footer id="subfooter">
+                    <div id="subfooterlogo">
+        
+                        <div class="scroll-to-top-arrow" ></div> 
+                    </div>
+                    <a href="https://www.fender.com/online-guitar-tuner"> Fender Tuner</a> |
+                    <a href="https://southpark.cc.com/">South Park Studios</a> |
+                    <a href="https://open.spotify.com/?">Spotfiy</a> 
+
+                    <p>
+                        &star;; Karen Flores 2023 -
+
+                        <script>
+                    ///Auto Update copyright date
+                            window.document.write(new Date().getFullYear());
+                        </script>
+                    </p>
+                </footer>
+
+        </div>
+<!-- end of the wrapper -->
+    </div>
+<!-- end of container -->
+</body>
+</html>

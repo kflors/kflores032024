@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York</title>
+    <style>
+        body{
+            background-color: rgb(37,36,50); 
+            color: rgba(232, 232, 232, 0.865);
+            background-image: url(Images/newyork.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            margin-top: 100px;
+        }
+
+        #wrapper{
+            width: 90%;
+            max-width: 1024px;
+            margin: auto;
+            border: 2px solid black;
+            box-shadow: 0px 0px 10px 10px white;
+        }
+        
+        #pageheader{
+            min-height: 150px;
+            margin:auto;
+            background-color: white;
+            background-image: url(Images/newyorkheadersmall.jpg);
+            background-size: auto;
+            position: relative;
+            
+        }
+
+        #logoheader{
+            background-color: none;
+            height: 250px;
+            width: 250px;
+            transition: all 2s;
+            background-image: url(Images/newyorkcity.gif);
+            position: absolute;
+            top: -70px;
+            right: -0px;
+        }
+        #logo:hover{
+            transform: rotate(-10deg);
+        }
+
+        #media{
+            background-color: rgb(69,45,94); 
+            min-height: 350px;
+            padding: .5rem;
+        }
+iframe{
+    width: 80%;
+    margin: auto;
+    display: block;
+    aspect-ratio: 560/315;
+}
+
+        #mainnav{
+            background-color: rgb(36,54,108);
+            min-height: 500px;
+            padding: .5rem;
+            flex-basis: 20%;
+        }
+
+        main{
+            background-color: rgb(56,56,81);
+            color: rgba(232, 232, 232, 0.865);
+            min-height: 500px;
+            padding: .5rem;
+            flex-basis: 80%;
+        }
+
+        footer{
+            min-height: 50px;
+            padding: .5rem;
+            background-color: rgb(70,64,78);
+            color: white;
+            text-align: center;
+        }
+
+        #flexbox001{
+            display: flex;
+            
+        }
+
+        #mainnav>ul{
+            background-color: none;
+            list-style-type:none;
+            padding:.25rem;
+        }
+
+        #mainnav a{
+            color: white;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+        <header id="pageheader">   
+        
+        
+        </header>
+        <div id="media"> #media</div>
+        <iframe src="https://www.youtube.com/embed/zGZDv6GnQmY" title="YouTube video player" frameborder="0" allow="accelero    meter; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+        </iframe>
+        
+<div id="flexbox001">
+            <nav id ="mainnav">
+                <nav> 
+                    <ul> 
+                        <li> <a href="index.html"> Home </a></li>
+                        <li> <a href="centralpark.html"> Central Park  </a></li>
+                        <li> <a href="statueofliberty.html">  Statue of Liberty </a></li>
+                        <li> <a href="empirestatebuilding.html"> Empire State Building</a></li>
+                    </ul>
+                </nav>
+            <div id="logoheader"> </div>
+        </nav>
+
+            <main>
+                <h1>Welcome to New York </h1>
+            </main>
+</div >
+        <footer>
+            &copy; Flores 2023
+        </footer>
+</div>
+
+</body>
+</html>

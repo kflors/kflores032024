@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+<style>
+
+*{
+    border-style: dotted;
+}
+
+
+
+    #div1, 
+    #div2{
+        box-sizing: content-box;
+    }
+
+    #div1{
+        border: 30px solid blue; 
+        background-color: lightsteelblue;
+        width: 250%;
+        padding: 30px;
+        margin: 30px;
+    }
+
+    #div2{
+        border: 5px solid silver;
+        background-color: aliceblue;
+        width: 250%;
+        padding: 30px;
+        margin: 30px;
+    }
+</style>
+
+</head>
+<body>
+    <h1>Box Model</h1>
+
+
+    <div id="div1">div1</div>
+    <div id="div2">div2</div>
+    
+</body>
+</html>

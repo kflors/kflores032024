@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A029J3A2A</title>
+</head>
+<body>
+    <style> 
+        body{
+            background-color:lightskyblue;
+            color: white;
+        }
+        h1, h2{
+            text-align: center;
+            text-transform: lowercase;
+        }
+
+        #div{
+            margin: auto;
+            margin-top: 50px;
+            padding:20px; 
+            width: 10rem;
+            height: 10rem;
+            text-align: center;
+        }
+        #rotator{
+            height: 10rem;
+            width: 10rem;
+            background-color: cornsilk;
+            border: 2px solid snow;
+            margin-left: 5rem;
+            animation-name: harry;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+
+
+
+        @keyframes harry{
+            from{
+                margin-left: 0rem;
+                background-color: cornsilk;
+                transform: rotate(0deg);
+            }
+            to{
+                margin-left: 50rem;
+                background-color: lightgrey;
+                transform: rotate(360deg);
+            }
+        }
+
+        #gray{
+            height: 10rem;
+            width: 10rem;
+            border: 2px solid snow;
+            margin-left: 5rem;
+            background-color: gray;
+            animation-name: changecolor;
+            animation-iteration-count: infinite;
+            animation-duration: 4s;
+            animation-direction: alternate;
+        }
+
+        
+        @keyframes changecolor{
+        from{
+            margin-left: 0rem;
+            background-color: gray ;}
+        to{
+            margin-left: 50rem;
+            background-color: white;
+    }
+}
+
+        #black{
+            height: 10rem;
+            width: 10rem;
+            border: 2px solid snow;
+            margin: auto;
+            background-color: black;
+            animation-name: changeheight;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+
+
+}
+        @keyframes changeheight{
+        from{
+            height: 10rem;
+}
+
+        to{
+            height: 20rem;
+            transform: translate(2rem, 2rem);
+}
+}
+
+#blue{
+        height: 10rem;
+        width: 10rem;
+        margin: auto;
+        background-color: blue;
+        animation-name: changeradius;
+        animation-duration: 10s;
+        animation-fill-mode: fowards;
+        animation-iteration-count: infinite;
+}
+
+@keyframes changeradius{
+        from{
+            border-radius: 0%;
+            padding:10px; 
+    }
+
+        to{
+            border-radius: 0%;
+            padding:30px; 
+        }
+}
+
+#green{
+    height: 10rem;
+    width: 10rem;
+    margin: auto;
+    background-color: green;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#orange{
+    height: 10rem;
+    width: 10rem;
+    margin: auto;
+    background-color: orange;
+    animation-name: scale;
+    animation-duration: 5s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    }
+
+@keyframes scale{
+    from{
+        transform: scale(.2);
+}
+
+    to{
+        transform: scale(1);
+}
+}
+
+    </style>
+</head>
+<body>
+    <h1>A029J3A2A </h1>
+    <h2> Keyframes Animations From To </h2>
+    <div id="rotator">Transformation/Rotation</div>
+    <div class="box" id="gray">Color</div>
+    <div class="box" id="black"> Height </div>
+    <div class="box" id="blue"> Border Radius</div>
+    <div class="box" id="green"> Spin </div>
+    <div class="box" id="orange"> Scale </div>
+</body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A005JS - Changing Properties</title>
+
+    <style>
+        pre{
+            background-color: gray;
+            color: silver;
+        }
+
+        span.tag{
+            color: lightcoral;
+        }
+
+        span.comment{
+            color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Changing Properties</h1>
+    <h2>A005JS</h2>
+
+    <p>
+As previously noted, JavaScript is a scripting language that uses objects. For example, your browser window is an object, which contains the document object. The document object, in turn, contains the body object, which includes the style object.
+    </p>
+
+    <p>
+        We can refer to these objects via JavaScript by using <strong>dot notation</strong>. For example, "window.document.body.style"
+    </p>
+
+    Using dot notation, we can access objects and change their properties.
+
+    <p>
+        The following dot notation reference can change two properties of the body.style object. We use window.document.body.style to access that object. These properties are referenced with the following code:
+    </p>
+
+    <p>
+        <strong>window.document.body.style.backgroundColor</strong> - This property is the background color of the body.
+    </p>
+
+    <p>
+        <strong>window.document.body.style.color</strong> - This property is the text color of the body.
+    </p>
+
+    <p>
+        Here, we <strong>change</strong> the window.document.body.style. properties as follows:
+    </p>
+
+<pre>
+    <span class="tag"> script > </span>
+    <span class="comment"> // Change the style object properties </span>
+    <span class="comment" > // Change the background color </span>
+    <p> window.document.body.style.backgroundColor='indianred'; </p>
+    <span class="comment" > //Change the text color</span>
+    <p> window.document.body.style.color='white';</p>
+    <span class="tag"> /script> </span>
+</pre>
+
+
+
+<script>
+            //Using dot notion 
+            window.document.body.style.backgroundColor = 'lightblue';
+    
+            window.document.body.style.color= 'white';
+    
+</script>
+
+</body>
+</html>

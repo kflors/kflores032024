@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Areas (OYO II)</title>
+</head>
+<style>
+    #container{
+        color: rgb(42, 42, 42);
+        margin: auto;
+        border: 2rem solid rgba(220, 217, 217, 0.79);
+        max-width: 1200px;
+        width:85%
+    }
+    #wrapper{
+        gap: 10px;
+        display: grid;
+        background-color: rgb(196,125,127); 
+        grid-template-areas: 
+        "header header header header header header"
+        "intromedia intromedia intromedia intromedia intromedia intromedia"
+        "mainnav mainnav pagemain pagemain pagemain pagemain"
+        "mainnav mainnav card001 card001 card002 card002"
+        "pagefooter pagefooter pagefooter pagefooter pagefooter pagefooter"
+        "pagedetails pagedetails pagedetails pagedetails pagedetails pagedetails";
+    }
+
+    #pageheader{
+        background-color:rgb(213, 186, 188) ;
+        min-height:150px;
+        padding:1rem;
+        grid-area: header;
+    }
+
+    #intromedia{
+        background-color: rgb(230, 184, 188);
+        min-height: 250px;
+        padding:1rem;
+        grid-area: intromedia;
+    }
+
+    #mainnav{
+        background-color: rgb(187, 154, 155);
+        min-height: 30px;
+        padding:1rem;
+        grid-area: mainnav;
+    }
+
+
+    #pagemain{
+        background-color: rgb(237,167,163);
+        min-height: 200px;
+        padding:1rem;
+        grid-area: pagemain;
+    }
+
+    #card001{
+        background-color: rgb(245,208,210); 
+        min-height: 150px;
+        padding:1rem;
+        grid-area: card001;
+    }
+
+    #card002{
+        background-color: rgb(255,204,206);
+        min-height: 150px;
+        padding:1rem;
+        grid-area: card002;
+    }
+
+    #pagefooter{
+        background-color:rgb(254,229,225);
+        min-height: 50px;
+        padding:1rem;
+        grid-area: pagefooter;
+    }
+
+    #pagedetails{
+        background-color: rgb(254, 245, 244); 
+        min-height: 200px;
+        padding:1rem;
+            grid-area: pagedetails;
+        }
+
+</style>
+<body>
+    <div id="container"> 
+        <div id="wrapper">
+        <header id="pageheader">pageheader</header>
+        <nav id="mainnav">mainnav</nav>
+        <div id="intromedia">intromedia</div>
+        <main id="pagemain">pagemain</main>
+        <section id="card001">card001</section>
+        <section id="card002">card002</section>
+        <footer id="pagefooter">pagefooter</footer>
+        <footer id="pagedetails">pagedetails</footer>
+    </div>  
+    </div>
+
+</body>
+</html>

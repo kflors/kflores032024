@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout 002</title>
+</head>
+<body>
+<style> 
+body{
+    background-color: #1C1C73;
+}
+#pageheader{
+    min-height: 150px;
+    background-color:#4C4C7C ; 
+    padding:1rem; 
+}
+#flexbox001{
+background-color: #847C8C;
+min-height: 400px;
+display: flex;
+}
+
+#topnav{
+    height: 75px;
+    background-color: #7C7C8C;
+}
+
+main{
+    flex-basis: 75%;
+    background-color: #948C93;
+}
+
+#sideaside{
+    background-color: antiquewhite;
+    flex-basis: 25%;
+}
+
+#q1section{
+    background-color: #B4AC9B;
+    border: 1px solid black;
+    height: 200px;
+}
+
+#q2section{
+    background-color:#B4AC9B;
+    border:1px solid black;
+    height: 200px;
+}
+
+#q3section{
+    background-color: #B4AC9B;
+    border: 1px solid black;
+    height: 200px;
+}
+
+#q4section{
+    background-color: #B4AC9B;
+    border: 1px solid black;
+    height:200px; 
+}
+
+#pagefooter{
+    background-color: #D4CCA2;
+    height: 100px;
+}
+</style>
+<div id="pageheader"> #pageheader</div>
+<div id="topnav"> #topnav</div>
+<div id="flexbox001">
+    <main> Main </main>
+    <aside id="sideaside"> #sideaside </aside>
+</div>
+<div id="q1section"> #q1section</div>
+<div id="q2section">#q2section </div>
+<div id="q3section"> #q3section</div>
+<div id="q4section"> #q4section</div>
+</div>
+<footer id="pagefooter"> #pagefooter</footer>
+
+</body>
+</html>

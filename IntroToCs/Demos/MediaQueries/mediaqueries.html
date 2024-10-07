@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+    /*moblie style */ 
+        body{
+            background-color: rgba(197, 183, 234, 0.746);
+        }
+
+        #container{
+            background-color: aliceblue;
+            padding: 1rem;
+            width: 80%;
+            margin: auto;
+            min-height: 500px;
+        }
+
+    /*responsive style */ 
+        @media  screen and (min-width:321px){
+            body{
+                background-color:rgba(197, 183, 234, 0.569);
+            }
+        #container{
+            background-color: rgba(240, 248, 255, 0.795);
+            color: gray;
+        }
+        }
+
+        @media screen and (min-height:480px){
+            body{
+                background-color:rgba(197, 183, 234, 0.325) ;
+            }
+            #container{
+            background-color: rgba(240, 248, 255, 0.469);
+        }
+        }
+
+        @media screen and (min-width:600px){
+            body{
+                background-color:rgba(197, 183, 234, 0.229);
+            }
+        }
+
+        @media screen and (min-width:768px){
+            body{
+                background-color:rgba(197, 183, 234, 0.093);
+            }
+        }
+
+        @media screen and (min-width:960px){
+            body{
+                background-color:rgba(197, 183, 234, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Media Queries</h1>
+    <div id="container">#container</div>
+</body>
+</html>

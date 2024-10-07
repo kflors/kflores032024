@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <style>
+
+	body
+	{
+		font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	}
+h1
+	{text-align:center;}
+	
+div
+{
+	color:white;
+	margin:auto;
+	margin-bottom:40px;
+	padding:10px;
+}
+div.box
+{
+	width:200px;
+	height:200px;
+	background-color:steelblue;
+}
+div#one
+{   background-color: orchid;
+    transition: all 2s;
+
+}
+
+div#one:hover{
+    background-color: aliceblue;
+}
+div#two
+{
+
+}
+
+div#two:hover{
+animation-name: recolor;
+animation-duration:1s ;
+}
+
+@keyframes recolor{
+    0%{background-color: red;}
+    25%{background-color:blue;}
+    50%{background-color:gray; }
+    75%{background-color:yellow;}
+}
+div#three
+{
+
+}
+
+    </style>
+<div class="box" id="one"></div>
+<div class="box" id="two">  </div>
+<div class="box" id="three"></div>
+<div class="box" id="four">  </div>
+</body>
+</html>

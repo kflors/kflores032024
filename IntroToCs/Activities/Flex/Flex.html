@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+
+        #wrapper
+        {
+            width: 60%;
+            margin: auto;
+        }
+        #fb1
+        {
+            display: flex;
+        }
+        #fb2
+        {
+            display: flex;
+        }
+        main
+        {
+            background-color: rgb(149,26,128); 
+            min-height: 200px;
+            padding: 10px;
+            flex-basis: 50%;
+        }
+
+        #article1{
+            background-color: rgb(101,37,130);
+            min-height: 100px;
+            padding: 10px;
+            flex-basis: 25%;
+            border: 1.5px solid black;
+        }
+
+        #article2{
+            background-color: rgb(150,26,128);
+            min-height: 100px;
+            padding: 10px;
+            flex-basis: 25%;
+            border: 1.5px solid black;
+        }
+
+        #article3{
+            background-color: rgb(133,80,156);
+            min-height: 100px;
+            padding: 10px;
+            flex-basis: 25%;
+            border: 1.5px solid black;
+        }
+        
+        #article4{
+            background-color: rgb(170,73,153);
+            min-height: 100px;
+            padding: 10px;
+            flex-basis: 25%;
+            border: 1.5px solid black;
+        }
+        #fb3
+        {
+            display: flex;
+        }
+        #fb4
+        {
+            display: flex;
+
+        }
+        nav
+        {
+            background-color: rgb(163,123,183);
+            min-height: 200px;
+            padding: 10px;
+            flex-basis: 25%;
+            border: 1.5px solid black;
+        }
+
+        #section01{
+            background-color: rgb(192,117,179);
+            min-height: 200px;
+            padding: 10px;
+            flex-basis: 50%;
+            border: 1.5px solid black;
+        }
+
+        #section02{
+            background-color: rgb(192,117,179);
+            min-height: 200px;
+            padding: 10px;
+            flex-basis: 50%;
+            border: 1.5px solid black;
+        }
+        
+        aside
+        {
+            background-color: #bb5cd4;
+            min-height: 200px;
+            padding: 10px;
+            flex-basis: 25%;
+        }
+
+        footer
+        {
+            background-color: #d44c8c;
+            min-height: 200px;
+            padding: 10px;
+            flex-basis: 25%;
+        }
+    
+
+    </style>
+</head>
+<body>
+
+    <div id="wrapper">
+        <div id="fb1">
+            <main id="main">Main</main>
+            <article id="article1">Article01</article>
+            <article id="article2">Article02</article>
+        </div>
+        <div id="fb2">
+            <main #main=""></main>
+            <article id="article3">Article03</article>
+            <article id="article4">Article04</article>
+        </div>
+        <div id="fb3">
+            <nav>Nav</nav>
+            <section id="section01">Section01</section>
+            <aside id="aside1"></aside>
+        </div>
+        <div id="fb4">
+            <section id="section02">Section02</section>
+            <footer>Footer</footer>
+            <aside id="aside2">Aside</aside>
+        </div>
+    </div>
+</body>
+</html>

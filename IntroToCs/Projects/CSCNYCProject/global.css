@@ -1,0 +1,262 @@
+body {
+    background-color: #A7A3A6;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-image: url(Images/new-york-city-laptop-92h9bzy0cdxvo79l.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+header {
+    background-color: #A7A3A6;
+    min-height: 100px;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 4;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+#wrapper {
+    background-color: rgb(0, 0, 0);
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#topnav {
+    background-color: #362234a0;
+    padding: 1rem;
+    min-height: 150px;
+    position: relative;
+    color: aliceblue;
+}
+
+#topnav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+}
+
+#topnav ul li {
+    border: 1px solid #A7A3A6;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+
+#topnav ul li:hover {
+    background-color: #333;
+}
+
+#media {
+    background-color: rgb(32, 32, 32);
+    padding: 1rem;
+    min-height: 300px;
+    background-image: url(Images/purple-aesthetic-new-york-skyline-i2p7x5txuof9atai.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+
+main {
+    background-color: #5c4960a5;
+    color: white;
+    padding: 1rem;
+    min-height: 400px;
+    line-height: 2;
+}
+
+main h1{
+    text-align: center;
+}
+
+main video{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 640/360;
+    display: none;
+}
+
+#cards {
+    background-color: #5c4960;
+    padding: 1rem;
+    min-height: 300px;
+    color: whitesmoke;
+    display:flex ;
+    flex-wrap: wrap;
+}
+
+article {
+    min-height: 150px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 1rem;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+footer {
+    background-color: rgb(115, 98, 111);
+    padding: 1rem;
+    min-height: 50px;
+    text-align: center;
+}
+
+#logomedia {
+    background-color: black;
+}
+
+#logomedia img {
+    display: block;
+    margin: auto;
+}
+
+
+#logodesktop {
+            display: none;
+            box-sizing: border-box;
+            position: relative;
+            border-radius: 50%;
+            padding: 1.5px;
+            top: -92px;
+            left: -56px;
+    }
+
+    #cards article{
+    background-color: rgb(81, 72, 89);
+    max-width: 400px;
+    aspect-ratio: 4/3;
+    transition: all .5s;
+    filter: grayscale(0%);
+    }
+    #cards article:hover {
+    filter: grayscale(100%);
+}
+
+#bronx{
+    background-image: url(Images/bronx.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#brooklyn{
+    background-image: url(Images/pixelcut-export\ \(1\).jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#manhattan{
+    background-image: url(Images/DUMBO_manhattan_bridge_at_night_GettyImages_640x474_79eb1662-5f67-4b45-8761-66700026bf0f.jpeg); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#queens{
+    background-image: url(Images/queens.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#statenisland{
+    background-image: url(Images/statenisland.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cards article h3{
+    padding: .5;
+    text-align: center;
+    text-decoration:wavy;
+    border-radius: 10px;
+    flex: 1;
+}
+
+#cards article h3:hover{
+    color: black;
+    background-color: white;
+}
+
+li{
+    text-align: center;
+    color: whitesmoke;
+}
+
+    /* Media Queries Desktop*/
+        @media screen and (min-width: 895px) {
+        #topnav ul {
+            flex-direction: row;
+}
+
+    #topnav {
+        min-height: 0px;
+        padding: 0.025;
+        position: sticky;
+        top: 130px;
+        z-index: 5;
+
+}
+
+    #topnav ul li {
+        border: none;
+}
+
+    #topnav ul li:hover {
+        background-color:#56365386;
+} 
+    header {
+        display: block;
+        background-color: #563653;
+}
+
+    #logomedia {
+        display: none;
+}
+
+    #wrapper {
+        margin-top: 200px;
+        background-color: black;
+}
+
+    #logodesktop {
+        display: block;
+        position: absolute;
+        top: -130px;
+        left: -90px;
+}
+
+    main h1{
+        text-align: center;
+    }
+
+    main video{
+        display: block; 
+    }
+}

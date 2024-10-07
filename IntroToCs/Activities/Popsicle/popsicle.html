@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popsicle</title>
+    <style>
+        body{
+            background-color:rgb(120,155,255);
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        h2{
+            color: aliceblue;
+            text-align: center;
+        }
+
+        #container{
+            min-height: 500px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border: 4px solid black;
+            min-width: 400px;
+            width: 50%;
+            margin: auto;
+        }
+
+        #head{
+            background-color: thistle;
+            height: 300px;
+            width: 200px;
+            border-radius: 50px 50px 25px 25px;
+            position: relative;
+            top: -500px;
+            right: -5px;
+            margin: auto;
+            box-shadow:5px 5px 5px 5px ;
+        }
+
+        #stick{
+            background-color: rgba(238, 198, 150, 0.941);
+            height: 80px;
+            width: 50px;
+            border-radius: 0px 0px 50px 50px;
+            top: -500px;
+            right: -5px;
+            margin: auto;
+            position: relative;
+        }
+
+        #smile
+        {
+            background-color: rgb(56, 56, 56);
+            height:20px;
+            width:90px;
+            border-radius:0px 0px 50px 50px ;
+            position: relative;
+            top:-650px;
+            right:0px;
+            margin:auto;
+        }
+        #tongue
+        {
+            background-color: rgb(167, 73, 73);
+            width:70px;
+            height:50px;
+            margin:auto;
+            border-radius: 0px 0px 50px 50px;
+            position: relative;
+            top:-660px;
+            right:0px;
+        }
+
+        #lefteye
+        {
+            width:20px;
+            height:20px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%;
+            position: relative;
+            top:-780px;
+            right:50px;
+            margin: auto;
+        }
+
+        #righteye{
+            width:20px;
+            height:20px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%;
+            position: relative;
+            top:-800px;
+            right:-50px;
+            margin: auto;
+        }
+
+        #lefteyereflection, #righteyereflection
+    {
+        width:3px;
+        height:3px;
+        background-color: transparent;
+        border-radius: 50%;
+        box-shadow: 2px -3px 2px 1px white;
+    }
+    #lefteyereflection
+    {
+        position:relative ;
+        top:10px;
+        right:-0px;
+        margin: auto;
+    }
+    #righteyereflection
+    {
+        position:relative;
+        top:9px;
+        margin: auto;
+    }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Popsicle</h1>
+    <h2>Karen Flores</h2>
+    <div id="container"></div>
+    <div id="head"></div>
+    <div id="stick"></div>
+    <div id="smile"></div>
+    <div id="tongue"></div>
+    <div id="lefteye">
+        <div id="lefteyereflection"></div>
+    </div>
+    <div id="righteye">
+        <div id="righteyereflection"></div>
+    </div>
+</body>
+</html>

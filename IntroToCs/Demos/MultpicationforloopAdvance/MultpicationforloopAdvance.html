@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>For Loop Multiplication</title>
+
+
+<style>
+table,
+th,
+td {
+border: 1px solid black;
+padding: 1rem;
+}
+th {
+background-color: salmon;
+}
+tr:hover {
+   background-color: yellow;
+}
+td:hover{
+   background-color: orange;
+}
+</style>
+</head>
+<body>
+<h1>For Loop Multiplication </h1>
+
+
+<script>
+   //create range variable
+   let range;
+
+
+   // Script functions
+   requestInput();
+   validateNumber();
+   buildTable();
+
+
+  
+   function requestInput(){
+   range = window.prompt('Enter the range to multiply');
+}
+function validateNumber()
+{
+   while (isNaN(range) || range < 1)
+   {
+       window.alert("Your entry is invalid. Enter a positive number.");
+       requestInput();
+   }
+}
+function buildTable(){
+// Setup Table
+window.document.write('<table>');
+document.write('<tr>');
+document.write('<th>X</th>');
+
+
+// For loop for horizontal factors (table headers)
+for (let x = 1; x <= range; x++) {
+
+
+// Code to run
+document.write('<th>' + x + '</th>');
+}
+// End the first row
+document.write('</tr>');
+
+
+for (let i = 1; i <= range; i++) {
+   document.write('<tr>');
+       document.write('<th>' + i + '</th>');
+       // for loop for products
+       for (let z = 1; z <= range; z++) {
+           document.write('<td>' + z * i + '</td>');
+           }
+       }
+   }
+
+
+// JavaScript Math Operators
+//window.document.write('Hello World');
+console.log('Hello World!');
+console.log(2 + 2);
+console.log(10 - 5);
+console.log(5 * 5);
+console.log(20 / 4);
+console.log(2 ** 2);
+
+
+
+
+</script>
+</body>
+</html>
+
+
+

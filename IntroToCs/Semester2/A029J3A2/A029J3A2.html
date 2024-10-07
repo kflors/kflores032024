@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A029J3A2 - Transition</title>
+</head>
+<body>
+    <style>
+        body{
+            color: rgb(228, 226, 223);
+            text-decoration: underline #a04ca9af;
+            background-color: black; 
+            text-align: center;
+
+        }
+
+
+        #container{
+            background-color: silver;
+            border: 9px solid rgb(255, 254, 254);
+            width: 490px;
+            margin: auto;
+            min-height: 600px;
+            padding: auto;
+        }
+
+        div{
+            margin:auto;
+            margin-bottom: 40px;
+            padding:10px;
+            
+        }
+
+        div#one{
+            background-color: #0E131F;
+            transition: all 2s;
+            width: 100px;
+            height: 100px;
+            
+        }
+
+        div#one:hover{
+            background-color: #4d6bb2ff;
+            color: white;
+        }
+
+        div#two{
+            background-color:#38405F;
+            width: 100px;
+            height: 100px;
+            transition: all 5s;
+        }
+
+        div#two:hover{
+            background-color: #350ed2;
+            width: 450px;
+        }
+
+        div#three{
+            background-color: #59546C;
+            width: 100px;
+            height: 100px;
+            transition: all 500ms;
+        }
+
+        div#three:hover{
+            background-color: #a04ca9;
+            transform: rotate(-360deg);
+        }
+
+        div#four{
+            background-color: #8B939C;
+            height:100px;
+            width: 100px;
+            animation-name: slidein;
+            animation-duration: 3s;
+            animation-iteration-count:infinite;
+        }
+
+        div#four:hover{
+            background-color: #651851;
+            border-radius:20px 15px 20px 15px;
+            transform:translate(50px, 120px);
+        }
+
+        @keyframes slidein
+
+{
+from{
+	transform: translate(-80px, 0px);		 
+}
+to{
+	transform: translate(100px, 0px) rotate(360deg);
+}
+}	
+    </style>  
+
+<h1> A029J3A2 - Transition</h1>
+
+<div id="container">
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+    <div id="four"></div>
+</div>
+
+</body>
+</html>

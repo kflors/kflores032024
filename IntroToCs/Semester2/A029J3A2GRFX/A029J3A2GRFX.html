@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A029J3A2GRFX - Complex Transitions</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color:rgba(146, 215, 230, 0.687);
+        }
+
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        #container{
+            width: 960px; 
+            height: 540px;
+            background-image: url(Images/busstop.jpg);
+            position: relative;
+        }
+
+        #stan{
+            position: relative;
+            background-image: url(Images/StanMarsh.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 150px;
+            width: 135px;  
+            top: 20px;
+            left: 110px;
+            transition-property:transform ;
+            transition-delay: .5s;
+            transition-property: 10s; 
+
+            
+        }
+
+
+        #stan:hover{
+            transform: translate(500px, 320px);
+            transition-timing-function: linear;
+        }
+
+        #kyle{
+            position: relative;
+            background-image: url(Images/KyleBroflovski.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 150px;
+            width:135px;
+            top: 200px;
+            left:290px ;
+            transition-property: left;
+        }
+
+        #kyle:hover{
+            transform: rotate(-113deg);
+            transition-duration:5s ;
+        }
+
+        #ike{
+            position: relative;
+            background-image: url(Images/Ike_2-ezgif.com-jpg-to-png-converter-removebg-preview.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 150px;
+            width:135px;
+            top: 18px;
+            left:425px ;
+        }
+
+        #ike:hover{
+            transform: translate(200px, -320px);
+            transition-timing-function: linear;
+            transition-duration:.5s ;
+        }
+
+    </style>
+
+
+    <h1>A029J3A2GRFX - Complex Transitions</h1>
+
+    <div id="container">
+        <div id="stan"></div>
+        <div id="kyle"></div>
+        <div id="ike"></div>
+    </div>
+</body>
+</html>
