@@ -3,90 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canvas Exploration </title>
+    <title>Canvas </title>
     <style>
-        #canvas{
-            border: 2px solid black;
-            display: block;
-            margin: auto ;
+        body{
+            color: rgb(255, 255, 255);
+            background-color: rgb(214, 188, 192);
         }
 
         h1{
             text-align: center;
         }
 
-        #buttonholder{
-            background-color: rgb(91, 78, 104);
-            width: 300px;
+        canvas#mycanvas{
+            border: 2px solid black;
+            background-color: silver;
+            display: block;
             margin: auto;
-            display: flex;
-            flex-direction:column ;
-        }
-
-        button{
-            margin: .5rem;
-            padding: .5rem;
         }
     </style>
 </head>
 <body>
-    <h1>Canvas Exploration 2</h1>
-    <canvas id="canvas"></canvas>
-    <div id="buttonholder">
-        <button id="createline">Create Line</button>
-        <button id="createrectangle">Create Rectangle</button>
-        <button id="createtriangle">Create Triangle</button>
-        <button id="createarc">Create Arc</button>
-        <button id="createstar">Create Star</button>
-        <button id="undodraw">Undo Draw</button>
-    </div>
+    <h1>Canvas Exploration</h1>
+    <canvas id="mycanvas">
+
+    </canvas>
 
     <script>
-        // Create Variables
-            const canvas = window.document.querySelector('#canvas');
-        //window.alert(canvas);
+        // Create canvas variable 
+            const myCanvas = window.document.querySelector('#mycanvas'); 
 
-        //Give Canvas drawing powers
-            const ctx = canvas.getContext('2d'); 
+        //window.alert(myCanvas);
+        //Set Canvas size
 
-        //Configure canvas 
-            canvas.width = 400; 
-            canvas.height = 400; 
-            canvas.style.backgroundColor = 'grey'; 
+            myCanvas.width = 800;
+            myCanvas.height = 400; 
+    
+    //Enable drawing
+    
+        const ctx = myCanvas.getContext('2d'); 
+    
+    // Draw a rectangle 
+    // Pick color
+        ctx.fillStyle = "blue"; 
+        ctx.fillRect(100, 100, 200, 200); 
 
-        //Add event listeners
-
-        //Create variables
-            const btnCreateLine = window.document.querySelector('#createline'); 
-            btnCreateLine.style.backgroundColor = 'white'; 
-            btnCreateLine.addEventListener('click' , function(){window.alert('Create Line')}); 
-
-        //Create Rectangle 
-        const btnCreateRectangle = window.document.querySelector('#createrectangle'); 
-        btnCreateRectangle .style.backgroundColor = 'white'; 
-        btnCreateRectangle.addEventListener('click' , function(){window.alert('Create Rectangle')} ); 
-    
-    //Create Triangle
-        const btnCreateTriangle = window.document.querySelector('#createtriangle'); 
-        btnCreateTriangle .style.backgroundColor = 'white'; 
-        btnCreateTriangle.addEventListener('click' , function(){window.alert('Create Triangle ')})
-    
-    //Create Arc
-        const btnCreateArc = window.document.querySelector('#createarc'); 
-        btnCreateArc .style.backgroundColor = 'white'; 
-        btnCreateArc.addEventListener('click' , function(){window.alert('Create Arc ')})
-    
-    //Create Star
-        const btnCreateStar = window.document.querySelector('#createstar'); 
-        btnCreateStar .style.backgroundColor = 'white'; 
-        btnCreateStar.addEventListener('click' , function(){window.alert('Create Star ')})
-    
-    //Create Undo Draw
-        const btnUndoDraw = window.document.querySelector('#undodraw'); 
-        btnUndoDraw .style.backgroundColor = 'white'; 
-        btnUndoDraw.addEventListener('click' , function(){window.alert('Undo Draw')}); 
-    
-    
+        //Draw a rectangle 
+        //Pick a color 
+        ctx.strokeStyle = "yellow";  
+        ctx.lineWidth= 15; 
+        ctx.strokeStyle(400, 100, 200, 200); 
     </script>
 </body>
 </html>

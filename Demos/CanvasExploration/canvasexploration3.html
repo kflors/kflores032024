@@ -59,33 +59,48 @@
         //Create variables
             const btnCreateLine = window.document.querySelector('#createline'); 
             btnCreateLine.style.backgroundColor = 'white'; 
-            btnCreateLine.addEventListener('click' , function(){window.alert('Create Line')}); 
+            btnCreateLine.addEventListener('click' , function(){
+             //{window.alert('Create Line');
+
+            //Select a stroke style - color
+                ctx.strokeStyle='white'; 
+                ctx.lineWidth = 5; 
+                ctx.lineCap = 'round'; //butt or round or square
+                ctx.lineJoin ='miter'; //bevel or miter
+
+            //Draw the line 
+                ctx.beginPath(); 
+                ctx.moveTo(15,15); 
+                ctx.lineTo(200,200); 
+                ctx.lineTo(15, 385); 
+                ctx.stroke(); 
+    }); 
 
         //Create Rectangle 
             const btnCreateRectangle = window.document.querySelector('#createrectangle'); 
             btnCreateRectangle .style.backgroundColor = 'white'; 
             btnCreateRectangle.addEventListener('click' , function(){window.alert('Create Rectangle')} ); 
-
+    
     //Create Triangle
-        const btnCreateTriangle = window.document.querySelector('#createtriangle'); 
-        btnCreateTriangle .style.backgroundColor = 'white'; 
-        btnCreateTriangle.addEventListener('click' , function(){window.alert('Create Triangle ')})
+            const btnCreateTriangle = window.document.querySelector('#createtriangle'); 
+            btnCreateTriangle .style.backgroundColor = 'white'; 
+            btnCreateTriangle.addEventListener('click' , function(){window.alert('Create Triangle ')})
     
     //Create Arc
-        const btnCreateArc = window.document.querySelector('#createarc'); 
-        btnCreateArc .style.backgroundColor = 'white'; 
-        btnCreateArc.addEventListener('click' , function(){window.alert('Create Arc ')})
+            const btnCreateArc = window.document.querySelector('#createarc'); 
+            btnCreateArc .style.backgroundColor = 'white'; 
+            btnCreateArc.addEventListener('click' , function(){window.alert('Create Arc ')})
     
-    //Create Star
-        const btnCreateStar = window.document.querySelector('#createstar'); 
-        btnCreateStar .style.backgroundColor = 'white'; 
-        btnCreateStar.addEventListener('click' , function(){window.alert('Create Star ')})
+        //Create Star
+            const btnCreateStar = window.document.querySelector('#createstar'); 
+            btnCreateStar .style.backgroundColor = 'white'; 
+            btnCreateStar.addEventListener('click' , function(){window.alert('Create Star ')})
     
     //Create Undo Draw
-        const btnUndoDraw = window.document.querySelector('#undodraw'); 
-        btnUndoDraw .style.backgroundColor = 'white'; 
-        btnUndoDraw.addEventListener('click' , function(){window.alert('Undo Draw')}); 
-    
+            const btnUndoDraw = window.document.querySelector('#undodraw'); 
+            btnUndoDraw .style.backgroundColor = 'white'; 
+            btnUndoDraw.addEventListener('click' , function(){window.alert('Undo Draw')}); 
+        
     
     </script>
 </body>

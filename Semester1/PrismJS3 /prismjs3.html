@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PrismJS3</title>
+		<link rel="stylesheet" href="CSS/style.css">
+		<link rel="stylesheet" href="CSS/prism.css">
+		<style>
+			body {
+				background-color: rgb(142, 140, 140);
+				font-family: Arial, Helvetica, sans-serif;
+				text-align: center;
+			}
+			h1,h2 {
+				color:rgb(201, 201, 201);
+			}
+			h3 {
+				font-size: 3rem;
+				padding: 1rem;
+				background-color:rgb(255,255,255) ;
+				margin: auto;
+				max-width: 200px;
+				border: 1px solid black;
+			}
+
+			p{
+				color: rgb(203, 124, 205);;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>PrismJS3</h1>
+		<h2>Random Number Between 1 and 100</h2>
+
+		<pre class="line-numbers language-js" tabindex="0">        
+			<code class="language-js"></code>
+			<code class="language-javascript">
+				// Change the text in the tab (title tag change)
+				window.document.title = 'Using Prism to Generate a Random Number ';
+	
+				// Print the random number
+				// Create variable
+				let randomNumber;
+	
+				// Assign variable a value - random number between 1 and 100
+				randomNumber = Math.floor(Math.random() * 100) + 1;
+	
+				// Write to the document
+				window.document.write(&lt;h3&gt; + randomNumber + &lt;/h3&gt;);
+	
+				window.document.write(
+					&lt;p&gt;Refresh you browser to generate a random number between 1 and 100. &lt;/p&gt;);
+			
+			</code>
+    </pre>
+
+	<script>
+		// Change the text in the tab (title tag change)
+		window.document.title = 'Using Prism to Generate a Random Number ';
+
+		// Print the random number
+		// Create variable
+		let randomNumber;
+
+		// Assign variable a value - random number between 1 and 100
+		randomNumber = Math.floor(Math.random() * 100) + 1;
+
+		// Write to the document
+		window.document.write('<h3>' + randomNumber + '</h3>');
+
+		window.document.write(
+			'<p>Refresh you browser to generate a random number between 1 and 100.</p>');
+	</script>
+
+
+<script src="Script/prism.js"></script>
+	</body>
+</html>
