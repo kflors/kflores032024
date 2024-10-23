@@ -90,7 +90,7 @@
 
         #pagenav{
             min-height: 40px;
-            width: 300px;
+            width: 400px;
             display: flex;
             align-content: center;
             justify-content: space-evenly;
@@ -147,6 +147,13 @@
         }
 
 
+        #keyassignments{
+            min-height: 200px;
+            background-color:#3B4963;
+            padding: 1rem;
+            align-items: center;
+        }
+
         #semesterI{
             min-height: 200px;
             background-color:#3B4963;
@@ -157,6 +164,7 @@
             min-height: 200px;
             background-color:#3B4963;
             padding: 1rem;
+            display: none;
         } 
 
         #pagefooter{
@@ -171,6 +179,10 @@
             min-height: 2rem;
         }
 
+        .footerlinks{
+            display: none;
+        }
+
         #subfooter{
             min-height: 200px;
             background-color:#3B4963; 
@@ -178,20 +190,33 @@
             text-align: center;
         } 
 
-        #topanchor{
-            width: 25px;
-            min-height: 25px;
-            background-color: aliceblue;
+        #top{
+            background-image:url(Images/crcaig-removebg-preview.png); ; 
+            background-attachment: fixed;
+            
             border: 1px solid black;
             padding: 1rem;
             text-align: center;
-            position: fix;
+            position: fixed;
             right: 20px;
             bottom: 20px;
             border-radius:50% ;
         }
 
 
+        @media screen and (min-width:768px){
+            #flexsubfooter{
+                display: flex; 
+                justify-content: space-between;
+            }
+
+            .footerlinks{
+                display: block; 
+                min-width: 300px
+            }
+        }
+
+        
 
 @media screen and (min-width:900px){
             #logo{
@@ -209,7 +234,6 @@
                 bottom: auto;
                 background-color: none;
             }
-
         }
 
     </style>
@@ -229,8 +253,10 @@
         <nav id="pagenav"> 
             <a href="#career">Career </a> |
             <a href="#semesterI"> Semester I</a> | 
-            <a href="#semesterII">Semester II</a>
+            <!-- <a href="#semesterII">Semester II</a> -->
+            <a href="#keyassignments"> Key Assignments</a>
     </nav>
+
     <blockquote> 
         "All that we see or seem is but a dream within a dream."
     </blockquote> 
@@ -261,9 +287,9 @@
     <!-- begin pagecontent -->
         <main id="pagecontent">
         <div class="container">
-            <h1>Karen Flores</h1>
+            <h2>Introduction</h2>
             <p>
-                Hi and welcome to my portfolio :). I'm currently a junior and taking Web App Develpment.  I also TA for Chagoyan. A little about me is that a like stars and listening to music. EPS I listened  to recently were The Grunk by Last Pride and The Bancroft Sessions by The Stallywags. I know how to play piano and guitar I hope to learn more instruments later on. I like South Park and my favorite character is Craig. 
+                Hai and welcome to my portfolio :3. I'm Karen (some of my friends call me Ren) Flores. I'm currently a junior and taking Web App Develpment!  I also TA for Chagoyan. A little about me is that a like stars and listening to music. I like recommending music to my friends and being able to discover new music. Some of my reccomendation at the moment would be 9th & Walnut, CHARLOTTE, The OF Tape Vol. 2, Demo 2023, and If There's No Heaven...  I know how to play piano and guitar I hope to learn more instruments later on in the future. I like annoying my friends as one does. I'm also a big of South Park fan and my favorite character is Craig.  
             </p>
         </div>
         </main>
@@ -274,6 +300,12 @@
             <div class="container">
             <a name="semesterI"></a>
             <h2>SemesterI</h2>
+            <ul>
+
+            </ul>
+            <li>
+                <a href="Activties/CanvasSmileyFace/CanvasSmileyFace.html" target="new"> Canvas Smiley Face</a>
+            </li>
         </div>
         </section>
     <!-- end semesterII -->
@@ -282,12 +314,27 @@
         <section id="semesterII">
         <div class="container">
         <a name="semesterII"></a>
-        <h2>Semester2</h2>
+        <h2>Semester II</h2>
+        
     </div>
     </section>
     <!-- end semester2 -->
     
-    <!-- begin pagefooter -->
+    <!-- begin Key Assignements  -->
+    <div id="keyassignments">
+        <div class="container">
+            <a name ="keyassignments"></a>
+            <h2>Key Assignements</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates doloribus praesentium nulla vero officiis cupiditate ipsum, veritatis reprehenderit illo dolor. Incidunt excepturi autem labore iure laborum nobis delectus optio itaque?
+            </p>
+        </div>
+        </div>
+        
+    <!-- end Key Assignements --
+
+
+    <!- begin pagefooter -->
     <footer id="pagefooter">
     <div class="container">
         <a href="">chago</a> |
@@ -301,19 +348,42 @@
 </div> 
     </div>
     </footer>
-    <!-- end pagefooter -->
-    
+
     <!-- begin subfooter -->
-    <footer id="subfooter"> 
-        <div class="container">
-            <div id="craig"></div>
+        <footer id="subfooter">
+            <div class="container">
+
+<div id="flexsubfooter">
+                    <div class="quote">
+                        <h3>Final Thoughts</h3>
+                        <blockquote>
+                            "Nobody prays for the heartless. Nobody gives another penny for the selfish." </blockquote>
+                        <p>Caraphernelia by Pierce the Veil</p>
+                    </div>
+                    <div class="footerlinks">
+                        <h3>Links</h3>
+                            <ul>
+                                <li><a href="#career">Career</a></li>
+                                <li><a href="#semesterI">Semester I</a></li>
+                                <li><a href="#keyassignments">Key Assignments</a></li>
+                            </ul>
+                    </div>
+    
+</div>
+
+
+            </div>
+        </footer>
+
+
         
-            <a href="https://southpark.cc.com/" target="new"> South Park Studios</a> |
-            <a href="https://pudding.cool/2021/10/judge-my-music/" target="new"> Bad Music</a> |
-            <a href="https://theshfl.com/" target="new">Shfl</a> |
-            <a href="https://spotistats.app/" target="new"> Stats.fm</a>
+<!-- <a href="https://southpark.cc.com/" target="new"> South Park Studios</a> |
+<a href="https://pudding.cool/2021/10/judge-my-music/" target="new"> Bad Music</a> |
+<a href="https://theshfl.com/" target="new">Shfl</a> |
+<a href="https://spotistats.app/" target="new"> Stats.fm</a> -->
+
             
-        </div>
+        
         <p>
             &star;; Karen Flores  -
 
@@ -326,7 +396,7 @@
     
 
     <div id="top">
-        <a href="#topanchor">top</a>
+        <a href="#Top">Top</a>
     </div>
 </body>
 </html>

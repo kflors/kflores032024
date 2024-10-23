@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Drawing</title>
+    <style>
+        body{
+            background-color: rgb(148, 228, 255);
+        }
+        h1{
+            text-align: center;
+            color: aliceblue;
+        }
+    </style>
+
+    <h1>Canvas Drawing</h1>
+    <canvas id="canvas"></canvas>
+
+
+    <script>
+    //Create canvas for 2d drawings 
+        const canvas = window.document.querySelector('canvas'); 
+        const ctx = canvas.getContext('2d'); 
+        canvas.style.backgroundColor = 'white'; 
+
+
+    //Configure canvas
+        canvas.width = 790; 
+        canvas.height = 500; 
+
+    //Style
+        canvas.style.border = '10px solid black'; 
+        canvas.style.margin = 'auto'; 
+        canvas.style.display = 'block'; 
+
+
+        //body
+        ctx.strokeStyle = 'black'; 
+            ctx.lineWidth = 200; 
+            ctx.beginPath(); 
+            ctx.arc(400, 250, 50, 58, Math.PI * 2); 
+            ctx.stroke(); 
+
+        //body2
+        // ctx.strokeStyle = 'white'; 
+        //     ctx.lineWidth = 200; 
+        //     ctx.beginPath(); 
+        //     ctx.arc(400, 150, 50, 0, Math.PI * 2); 
+        //     ctx.stroke(); 
+
+
+    </script>
+</head>
+<body>
+</body>
+</html>
