@@ -30,7 +30,7 @@
     </style>
 </head>
 <body>
-    <h1>Canvas Exploration 4</h1>
+    <h1>Canvas Exploration 5</h1>
     <canvas id="canvas"></canvas>
     <div id="buttonholder">
         <button id="createline">Create Line</button>
@@ -39,7 +39,7 @@
         <button id="createarc">Create Arc</button>
         <button id="createstar">Create Star</button>
         <!-- <button id="undodraw">Undo Draw</button> -->
-        <button id="clear"></button>
+        <button id="clear">Clear</button>
     </div>
 
     <script>
@@ -130,10 +130,10 @@
                 ctx.lineJoin = "miter"; 
 
                 ctx.beginPath(); 
-                ctx.moveTo(50,20);  
-                    ctx.lineTo(10, 20);
-                    ctx.lineTo(20,10); 
-                    ctx.lineTo(90, 100);
+                ctx.moveTo(150,300);  
+                    ctx.lineTo(125, 250);
+                    ctx.lineTo(125,10); 
+                    ctx.lineTo(175, 250);
                     
                 ctx.stroke(); 
 
@@ -141,9 +141,19 @@
             }); 
     
     //Create Undo Draw
-            const btnUndoDraw = window.document.querySelector('#undodraw'); 
-            btnUndoDraw .style.backgroundColor = 'white'; 
-            btnUndoDraw.addEventListener('click' , function(){window.alert('Undo Draw')}); 
+            //const btnUndoDraw = window.document.querySelector('#undodraw'); 
+            //btnUndoDraw .style.backgroundColor = 'white'; 
+            //btnUndoDraw.addEventListener('click' , function(){window.alert('Undo Draw')}); 
+        
+    
+    //Create Clear Draw
+            const btnClearDraw = window.document.querySelector('#clear'); 
+            btnClearDraw .style.backgroundColor = 'white'; 
+            btnClearDraw.addEventListener('click' , function(){
+                //window.alert('Clear')
+                
+                ctx.clearRect(0,0, canvas.width, canvas.height); 
+            }); 
         
     
     </script>
