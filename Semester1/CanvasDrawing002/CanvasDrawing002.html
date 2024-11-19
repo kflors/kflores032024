@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Drawing</title>
+    <style>
+        body{
+            background-color: rgb(65, 77, 81);
+        }
+        h1{
+            text-align: center;
+            color: aliceblue;
+        }
+    </style>
+
+    <h1>Canvas Drawing 002</h1>
+    <canvas id="canvas"></canvas>
+
+
+    <script>
+    //Create canvas for 2d drawings 
+        const canvas = window.document.querySelector('canvas'); 
+        const ctx = canvas.getContext('2d'); 
+        canvas.style.backgroundColor = 'white'; 
+
+
+    //Configure canvas
+        canvas.width = 1000; 
+        canvas.height = 900; 
+
+    //Style
+        canvas.style.border = '5px solid black'; 
+        canvas.style.margin = 'auto'; 
+        canvas.style.display = 'block'; 
+
+
+        //body
+            ctx.strokeStyle = 'rgb(115,113,95)'; 
+            ctx.lineWidth = 200; 
+            ctx.beginPath(); 
+            ctx.arc(500, 300, 100, 0, Math.PI * 2); 
+            ctx.stroke(); 
+
+        //body 2
+            ctx.strokeStyle = 'rgb(115,113,95)'; 
+            ctx.lineWidth = 200; 
+            ctx.beginPath(); 
+            ctx.arc(500, 550, 200, 0, Math.PI * 2); 
+            ctx.stroke();
+
+        //Tummy
+        ctx.fillStyle = 'rgb(218,212,154)';
+        ctx.beginPath(); 
+        ctx.arc(500, 540, 260, 0, Math.PI * 2); 
+        ctx.fill();
+
+        //Ear 
+            ctx.beginPath();            
+            ctx.lineTo(400, 100); 
+            ctx.lineTo(450, 40);
+            ctx.moveTo(500, 100); 
+            ctx.closePath();              
+            ctx.strokeStyle = 'rgb(115,113,95)';
+            ctx.lineWidth = 70; 
+            ctx.stroke();  
+
+        //Ear 2
+            ctx.beginPath();            
+            ctx.lineTo(600, 100); 
+            ctx.lineTo(550, 40);
+            ctx.moveTo(600, 100); 
+            ctx.closePath();              
+            ctx.strokeStyle = 'rgb(115,113,95)';
+            ctx.lineWidth = 70; 
+            ctx.stroke();  
+
+        //Eyes
+            ctx.strokeStyle = 'white'; 
+            ctx.lineWidth = 40; 
+            ctx.beginPath(); 
+            ctx.arc(420, 220, 10, 0, Math.PI *2 ); 
+            ctx.stroke(); 
+            ctx.closePath();
+
+        //Eyes 2
+            ctx.lineWidth = 40; 
+            ctx.beginPath(); 
+            ctx.arc(590, 220, 10, 0, Math.PI *2 ); 
+            ctx.stroke(); 
+            ctx.closePath();
+
+        //Inisde
+            ctx.strokeStyle = 'black'; 
+            ctx.lineWidth = 40; 
+            ctx.beginPath(); 
+            ctx.arc(590, 225, .1, 0, Math.PI *2 );
+            ctx.stroke(); 
+            ctx.closePath(); 
+
+        //Inisde 2
+            ctx.strokeStyle = 'black'; 
+            ctx.lineWidth = 40; 
+            ctx.beginPath(); 
+            ctx.arc(420, 225, .1, 0, Math.PI *2 );
+            ctx.stroke(); 
+            ctx.closePath(); 
+
+
+  // Whiskers (parallel lines)
+  ctx.strokeStyle = "black"; 
+        ctx.lineWidth = 2; 
+
+        // Left whiskers
+        ctx.beginPath(); 
+        ctx.moveTo(350, 250); 
+        ctx.lineTo(150, 160); 
+        ctx.stroke(); 
+
+        ctx.beginPath(); 
+        ctx.moveTo(350, 270); 
+        ctx.lineTo(150, 270); 
+        ctx.stroke(); 
+
+        // Right whiskers
+        ctx.beginPath(); 
+        ctx.moveTo(650, 250); 
+        ctx.lineTo(850, 150); 
+        ctx.stroke(); 
+
+        ctx.beginPath(); 
+        ctx.moveTo(650, 270); 
+        ctx.lineTo(850, 270); 
+        ctx.stroke(); 
+
+    </script>
+
+
+</head>
+<body>
+</body>
+</html>

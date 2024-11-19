@@ -16,6 +16,7 @@
 
         html{
             scroll-behavior: smooth;
+            filter:brightness(89%); 
         }
 
 
@@ -26,7 +27,6 @@
             margin: auto; 
             padding: 1rem 3rem 1rem 3rem;
             border-radius: 20px;
-            padding: 1rem ;
             border-radius: 1.5rem;
             position: relative;
             
@@ -63,18 +63,6 @@
             transition: all 2s;
         }
 
-        #craig{
-                background-image: url(Images/crcaig-removebg-preview.png);
-                width: 100px;
-                height: 100px;
-                background-size: cover;
-                position: absolute;
-                top:135px;
-                left: -35px;
-                border-radius: 50%;
-                }
-
-
         img{
             max-width: 40%;
             margin:auto;
@@ -97,7 +85,12 @@
             position: absolute;
             bottom: 0px;
             left: calc(50% - 150px);
+        }
 
+        #pagenav a{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            text-transform: lowercase;
         }
 
 
@@ -126,7 +119,7 @@
         }
 
         a:hover{
-            color: rgba(204, 203, 206, 0.632)
+            color: rgba(204, 203, 206, 0.632); 
         }
 
         #auto{
@@ -190,19 +183,20 @@
             text-align: center;
         } 
 
-        #top{
-            background-image:url(Images/crcaig-removebg-preview.png); ; 
-            background-attachment: fixed;
-            
-            border: 1px solid black;
+        #top
+        {
+            background-image: url(Images/crcaig-removebg-preview.png);
+            background-size: contain;
+            width: 100px;
+            height: 100px;
             padding: 1rem;
             text-align: center;
             position: fixed;
             right: 20px;
             bottom: 20px;
-            border-radius:50% ;
-        }
-
+            border-radius: 50%;
+        
+}
 
         @media screen and (min-width:768px){
             #flexsubfooter{
@@ -234,6 +228,7 @@
                 bottom: auto;
                 background-color: none;
             }
+        
         }
 
     </style>
@@ -280,6 +275,16 @@
         <div class="container">
         <a name="career"></a>
         <h2>Career</h2>
+        <ul>
+            <li><a href="Career/Letter of Introduction.pdf">Letter of Introduction</a></li>
+            <li><a href="Career/Resume.pdf">Resume</a></li>
+            <li><a href="Career/References.pdf">References</a></li>
+            <li><a href="Career/Kami Export - Karen Flores - Sample Application.pdf">Job Application</a></li>
+            <li><a href="Career/Career Action Plan.pdf">Career Plan</a></li>
+            <li><a href="">Work Samples</a></li>
+            <li><a href="">Certificates</a></li>
+
+        </ul>
     </div>
     </section>
     <!-- end career -->
@@ -288,8 +293,9 @@
         <main id="pagecontent">
         <div class="container">
             <h2>Introduction</h2>
+            <h3>Git Clone</h3>
             <p>
-                Hai and welcome to my portfolio :3. I'm Karen (some of my friends call me Ren) Flores. I'm currently a junior and taking Web App Develpment!  I also TA for Chagoyan. A little about me is that a like stars and listening to music. I like recommending music to my friends and being able to discover new music. Some of my reccomendation at the moment would be 9th & Walnut, CHARLOTTE, The OF Tape Vol. 2, Demo 2023, and If There's No Heaven...  I know how to play piano and guitar I hope to learn more instruments later on in the future. I like annoying my friends as one does. I'm also a big South Park fan and my favorite character is Craig.  
+                Hai and welcome to my portfolio :3. I'm Karen. I'm currently a junior and taking Web App Develpment!  I also TA for Chagoyan. A little about me is that a like stars and listening to music. I like recommending music to my friends and being able to discover new music. Some of my reccomendation at the moment would be 9th & Walnut, CHARLOTTE, The OF Tape Vol. 2, Demo 2023, and If There's No Heaven...  I know how to play piano and guitar I hope to learn more instruments later on in the future. I like annoying my friends as one does. I'm also a big South Park fan and my favorite character is Craig.  
             </p>
         </div>
         </main>
@@ -299,13 +305,13 @@
             <section id="semesterI">
             <div class="container">
             <a name="semesterI"></a>
-            <h2>SemesterI</h2>
-            <ul>
+            <h2>Semester I</h2>
+                
+                    <a href="Activties/CanvasSmileyFace/CanvasSmileyFace.html" target="new"> Canvas Smiley Face</a> <br />
+                    <a href="Semester1/CanvasDrawing001/canvasdrawing.html" target="new">Canvas Drawing 001</a> <br/> 
+                    <a href="Semester1/CanvasDrawing002/CanvasDrawing002.html" target="new">Canvas Drawinf 002</a>
+    
 
-            </ul>
-            <li>
-                <a href="Activties/CanvasSmileyFace/CanvasSmileyFace.html" target="new"> Canvas Smiley Face</a>
-            </li>
         </div>
         </section>
     <!-- end semesterII -->
@@ -326,7 +332,7 @@
             <a name ="keyassignments"></a>
             <h2>Key Assignements</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates doloribus praesentium nulla vero officiis cupiditate ipsum, veritatis reprehenderit illo dolor. Incidunt excepturi autem labore iure laborum nobis delectus optio itaque?
+                chiken butt :p
             </p>
         </div>
         </div>
@@ -396,8 +402,8 @@
     
 
     <div id="top">
-        <a href="#Top">Top</a>
-    </div>
+        <a href="#Top">Top</a></div>
+    </dv>
 </body>
 </html>
 
