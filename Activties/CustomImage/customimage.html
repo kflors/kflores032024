@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Objects</title>
+    <h1>Pictor</h1>
+    <h2>(The Painter)</h2>
+
+    <style>
+        body{
+            background-color: rgba(21, 26, 39, 0.884);
+            color: aliceblue;
+            font-style: oblique;
+
+        }
+
+        h1, h2{
+            text-align: center;
+            text-shadow: 2px 2px 2px black;        
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+        const CONSTELLATION = {
+            img:'<img src="Images/Pictor.jpeg">',
+            name:'Pictor', 
+            genitive:'Pictoris', 
+            brighteststar:'Alpha Pictoris',
+            quadrant:'SQ1', 
+            location:'Southern Hemisphere', 
+            coordinates:'Right Ascension: 06h Declination: -55º ', 
+            isLaCaille:'true', 
+            shine:function(){return 'shine!'}, 
+            illuminate:function(){return 'illuminate!'}, 
+            opacity:function(){return 'opacity'}
+            
+        }
+    
+            window.document.write(CONSTELLATION.img + '<br>' ); 
+            window.document.write(CONSTELLATION.name + '<br>' ); 
+            window.document.write(CONSTELLATION.genitive + '<br>' ); 
+            window.document.write(CONSTELLATION.brighteststar + '<br>' ); 
+            window.document.write(CONSTELLATION.quadrant + '<br>' ); 
+            window.document.write(CONSTELLATION.location + '<br>' ); 
+            window.document.write(CONSTELLATION.coordinates + '<br>' ); 
+            window.document.write(CONSTELLATION.isLaCaille + '<br>' ); 
+            window.document.write(CONSTELLATION.shine() + '<br>' ); 
+            window.document.write(CONSTELLATION.illuminate() + '<br>' ); 
+            window.document.write(CONSTELLATION.opacity() + '<br>' ); 
+
+
+
+    </script>
+    </body>
+    </html>
