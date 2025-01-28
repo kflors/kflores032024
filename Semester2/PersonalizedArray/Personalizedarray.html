@@ -6,21 +6,60 @@
     <title>Personalized Array</title>
 </head>
 <body>
-    <h1>Personalized Array </h1>
+    <h1>Personalized Array</h1>
+    <h2>Arctic Monkeys Albums</h2>
+    <p>
+        <ul>
+            
+                <li>Whatever People Say I Am, That's What I'm Not</li>
+                <li>Favourite Worst Nightmare</li>
+                <li>Humbug</li>
+                <li>Suck It and See</li>
+                <li>AM</li>
+                <li>Tranquility Base Hotel + Casino</li> 
+                <li>The Car</li>
+        
+    </ul>
+    </p>
 
     <style>
         body{
-            background-color: rgb(107, 162, 207);
+            background-color: rgb(245, 176, 203);
+            color: rgb(119, 113, 111);
         }
 
-        h1{
+        h1, h2{
             text-align: center;
-            color: aliceblue;
         }
     </style>
 
-    <style>
-        
-    </style>
+
+<script>
+
+let arcticMonkeys = [];
+
+arcticMonkeys[0] = "Whatever People Say I Am, That's What I'm Not";
+arcticMonkeys[1] = "Favourite Worst Nightmare";
+arcticMonkeys[2] = "Humbug";
+arcticMonkeys[3] = "Suck It and See";
+
+console.log(arcticMonkeys);
+console.log(arcticMonkeys.length);
+
+arcticMonkeys.push("AM");
+arcticMonkeys.push("Tranquility Base Hotel + Casino");
+
+arcticMonkeys.pop()
+arcticMonkeys.shift();
+arcticMonkeys.unshift("The Car");
+
+arcticMonkeys.forEach(function(c){
+    console.log("I luv  " + c);
+});
+
+arcticMonkeys.forEach(function(c){
+    console.log(c + " is mid")
+})
+</script>
 </body>
 </html>
