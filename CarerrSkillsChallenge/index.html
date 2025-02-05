@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+    /* Mobile Forst Desgin */
+    body{
+        background-color: rgb(232, 228, 230);
+        padding-top: 1rem;
+    }
+
+    #container{
+        max-width: 1200px;
+        background-color: #384D48;
+        margin: auto;
+        border: 1px solid grey;
+    }
+
+    nav{
+        background-color: #6E7271;
+        min-height: 5rem;
+        padding: 1rem;
+        grid-area:nav;
+    }
+
+    header{
+        background-color: #ACAD94;
+        min-height: 5rem;
+        padding: 1rem;
+        grid-area: hd;
+
+    }
+
+    div#media{
+        background-color: #C2C1B5;
+        min-height: 5rem;
+        padding: 1rem;
+        grid-area: med;
+    }
+    main{
+        background-color: white;
+        min-height: 5rem;
+        padding: 1rem;
+        grid-area: mn;
+    }
+
+    aside{
+        background-color: #CDCBC5;
+        min-height: 5rem;
+        padding: 1rem;
+        grid-area: asi;
+    }
+
+    footer{
+        background-color: #D8D4D5;
+        min-height: 5rem;
+        padding: 1rem;
+        grid-area: foo;
+    }
+    footer#subfooter{
+        background-color: #E2E2E2;
+        min-height: 5rem;
+        padding: 1rem;
+        grid-area: sub;
+    }
+    /* Tablet and Desktop */
+    /* Media Quaries */
+
+
+    @media screen and (min-width: 480px) {
+    body {
+        background-color: pink;
+    }
+
+    #container{
+        display: grid;
+        gap: 10px;
+        grid-template-areas: 
+        "hd hd hd hd"
+        "nav nav nav nav"
+        "med med med med"
+        "mn mn mn mn"
+        "asi asi asi asi"
+        "foo foo foo foo"
+        "sub sub sub sub"
+        ;
+    }
+
+    div#media{
+        min-height: 10rem;
+        transition: all 2s;
+    }
+    main{
+        min-height: 10rem;
+        transition: all 2s;
+    }
+    aside{
+        min-height: 10rem;
+        transition: all 2s;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: #D8D4D5;
+    }
+
+
+    #container{
+        display: grid;
+        grid-template-areas: 
+        "hd hd hd hd"
+        "nav nav nav nav"
+        "med med med med"
+        "mn mn mn asi"
+        "foo foo foo foo"
+        "sub sub sub sub"
+        ;
+}}
+@media screen and (min-width: 1200px){
+    body{
+        background-color: whitesmoke;
+    }
+    header{
+        min-height: 10rem;
+    }
+    div#media{
+        min-height: 18rem;
+    }
+
+    main{
+        min-height: 30rem;
+    }
+}
+
+    
+    </style>
+</head>
+<body>
+    <div id="container">
+        <nav>Nav</nav>
+        <header>Header</header>
+        <div id="media">Media</div>
+        <main>Main</main>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
+        <footer id="subfooter"></footer>
+    </div>
+</body>
+</html>

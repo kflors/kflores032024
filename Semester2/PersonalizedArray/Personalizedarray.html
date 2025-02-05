@@ -7,15 +7,18 @@
 </head>
 <body>
     <h1>Personalized Array</h1>
-    <h2>Arctic Monkeys Albums</h2>
+    <h2>Arctic Monkeys</h2>
     <p>
         <ul>
             
                 <li>Whatever People Say I Am, That's What I'm Not</li>
+                <li>Who the F*** Are Arctic Monkeys</li>
+                <li>Brainstorm</li>
                 <li>Favourite Worst Nightmare</li>
                 <li>Humbug</li>
                 <li>Suck It and See</li>
                 <li>AM</li>
+                <li>Live at the Royal Albert Hall</li>
                 <li>Tranquility Base Hotel + Casino</li> 
                 <li>The Car</li>
         
@@ -25,7 +28,7 @@
     <style>
         body{
             background-color: rgb(245, 176, 203);
-            color: rgb(119, 113, 111);
+            color: rgb(233, 232, 231);
         }
 
         h1, h2{
@@ -39,9 +42,15 @@
 let arcticMonkeys = [];
 
 arcticMonkeys[0] = "Whatever People Say I Am, That's What I'm Not";
-arcticMonkeys[1] = "Favourite Worst Nightmare";
-arcticMonkeys[2] = "Humbug";
-arcticMonkeys[3] = "Suck It and See";
+arcticMonkeys[1] = "Who the F*** Are Arctic Monkeys";
+arcticMonkeys[2] = "Brainstorm";
+arcticMonkeys[3] = "Favourite Worst Nightmare";
+arcticMonkeys[4] = "Humbag";
+arcticMonkeys[5] = "Suck It and See";
+arcticMonkeys[6] = "AM";
+arcticMonkeys[7] = "Live at the Royal Albert";
+arcticMonkeys[8] = "Tranquility Base Hotel + Casino";
+arcticMonkeys[9] = "The Car";
 
 console.log(arcticMonkeys);
 console.log(arcticMonkeys.length);
@@ -53,12 +62,12 @@ arcticMonkeys.pop()
 arcticMonkeys.shift();
 arcticMonkeys.unshift("The Car");
 
-arcticMonkeys.forEach(function(c){
-    console.log("I luv  " + c);
+arcticMonkeys.forEach(function(a){
+    console.log("I luv  " + a);
 });
 
-arcticMonkeys.forEach(function(c){
-    console.log(c + " is mid")
+arcticMonkeys.forEach(function(a){
+    console.log(a + " is mid")
 })
 </script>
 </body>
