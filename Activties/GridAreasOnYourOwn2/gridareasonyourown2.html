@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Areas II</title>
+    <style>
+        #container{
+            padding:1rem;
+            margin:auto;
+            width: 80%;
+        }
+
+        #wrapper{            
+            border: 2rem solid rgba(212, 212, 212, 0.79); 
+            width:80%;
+            max-width:1200px;
+            padding:1rem;
+            margin:auto;
+            display:grid;
+            gap:10px;
+            background-color: #7A6174; 
+            grid-template-areas: 
+                "hd"
+                "in"
+                "mn"
+                "pm"
+                "c001"
+                "c002"
+                "pf"
+                "pd";
+        }
+
+        #pageheader{
+            background-color:#D1B1C8 ;
+            min-height:150px;
+            padding:1rem;
+            grid-area: hd;
+        }
+
+        #intromedia{
+            background-color: #C1B4CD;
+            min-height: 250px;
+            padding:1rem;
+            grid-area: in;
+        }
+
+        #mainnav{
+            background-color: #B1B7D1;
+            min-height: 30px;
+            padding:1rem;
+            grid-area: mn;
+        }
+
+        #pagemain{
+            background-color: #A6ABC3;
+            min-height: 200px;
+            padding:1rem;
+            grid-area: pm;
+        }
+
+        #card001{
+            background-color: #9B9FB5; 
+            min-height: 150px;
+            padding:1rem;
+            grid-area: c001;
+        }
+
+        #card002{
+            background-color: #94899D;
+            min-height: 150px;
+            padding:1rem;
+            grid-area: c002;
+        }
+
+        #pagefooter{
+            background-color:#94899D;
+            min-height: 50px;
+            padding:1rem;
+            grid-area: pf;
+        }
+
+        #pagedetails{
+            background-color: #8C7284; 
+            min-height: 200px;
+            padding:1rem;
+            grid-area: pd;
+        }
+
+        /* Media Query for screens 768px and up */
+        @media screen and (min-width: 768px){            
+            #wrapper{
+                grid-template-areas: 
+                "hd hd hd hd hd hd"
+                "in in in in in in"
+                "mn mn pm pm pm pm"
+                "mn mn c001 c001 c002 c002"
+                "pf pf pf pf pf pf"
+                "pd pd pd pd pd pd";
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container"> 
+        <div id="wrapper">
+            <header id="pageheader">pageheader</header>
+            <nav id="mainnav">mainnav</nav>
+            <div id="intromedia">intromedia</div>
+            <main id="pagemain">pagemain</main>
+            <section id="card001">card001</section>
+            <section id="card002">card002</section>
+            <footer id="pagefooter">pagefooter</footer>
+            <footer id="pagedetails">pagedetails</footer>
+        </div>  
+    </div>
+</body>
+</html>

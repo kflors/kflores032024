@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Areas I</title>
+</head>
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Areas (OYO) </title>
+<style>
+        body
+        {
+        background-color:rgb(213, 213, 213);
+        padding:1rem;
+        }
+
+        #container
+        {
+        background-color: purple;
+        padding:1rem;
+        max-width:1200px;
+        margin:auto;
+        width: 80%;
+        }
+
+        #wrapper
+        {
+            background-color:indigo;
+            width:80%;
+            max-width:1000px;
+            padding:1rem;
+            margin:auto;
+            display:grid;
+            gap:10px;
+            grid-template-areas:
+            "ph"
+            "im"
+            "pm"
+            "pa"
+            "c001" 
+            "c002" 
+            "c003"
+            "pf"
+            "pd"
+        ;
+        }
+
+        #pageheader
+        {
+        background-color: #F5E6E8;
+        min-height:120px;
+        grid-area:ph;
+        padding:1rem;
+        }
+
+        #intromedia
+        {
+        background-color: rgb(241, 228, 230);
+        min-height: 200px;
+        grid-area:im;
+        padding:1rem;
+        }
+
+        #pagemain
+        {
+        background-color: #E5D6E4;
+        min-height:300px;
+        grid-area:pm;
+        padding:1rem;
+        }
+
+        #pageaside
+        {
+        background-color: #D5C6E0;        
+        min-height:300px;
+        grid-area:pa;
+        padding:1rem;
+        }
+
+
+        #card001
+        {
+        background-color: #AAA1C8;
+        min-height:150px;
+        grid-area:c001;
+        padding:1rem;
+        }
+
+        #card002
+        {
+        background-color: #A08EB5;
+        min-height:150px;
+        grid-area:c002;
+        padding:1rem;
+        }
+
+        #card003
+        {
+        background-color: #9B84AB;
+        min-height:150px;
+        grid-area:c003;
+        padding:1rem;
+        }
+
+
+        #pagefooter
+        {
+        background-color: #987DA4;
+        min-height: 80px;
+        grid-area:pf;
+        padding:1rem;
+        }
+
+        #pagedetails
+        {
+        background-color: #192a51;
+        min-height:200px;
+        grid-area:pd;
+        padding:1rem;
+        }
+
+        @media screen and (min-width: 768px){
+            #wrapper{
+            grid-template-areas: 
+            "ph ph ph ph ph ph"
+            "im im im im im im"
+            "pm pm pm pa pa pa"
+            "c001 c001 c002 c002 c003 c003"
+            "pf pf pf pf pf pf"
+            "pd pd pd pd pd pd"
+        ;}
+        }
+
+</style>
+<div id="container">
+    <div id="wrapper">
+    <header id="pageheader">#pageheader</header>
+    <div id="intromedia">#intromedia</div>
+    <main id="pagemain">#pagemain</main>
+    <main id="pageaside">#pageaside</main>
+        <section id="card001">#card001</section>
+        <section id="card002">#card002</section>
+        <section id="card003">#card003</section>
+    <footer id="pagefooter">#pagefooter</footer>
+    <footer id="pagedetails">#pagedetails</footer>
+    </div>
+        </div>
+        
+</body>
+</html>
