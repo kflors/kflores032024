@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Valley Pets</title>
+</head>
+<style>
+    body{
+        background-image: url(Images/grewnwp.jpg);
+    }
+
+    #logo {
+            width: 100px;
+            height: 100px;
+            background-image: url('Images/logo2.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            position: relative;
+            top: -1200px;
+            left: -25px;
+        }
+
+    #container{
+        color: rgb(42, 42, 42);
+        margin: auto;
+        border: 2rem solid rgba(220, 217, 217, 0.79);
+        max-width: 1200px;
+        width:85%
+    }    
+    #wrapper{
+        gap: 10px;
+        display: grid;
+        background-color: rgb(213, 213, 213); 
+        grid-template-areas: 
+        "hd hd hd hd hd hd"
+        "in in in in in in"
+        "mn mn pm pm pm pm"
+        "mn mn c001 c001 c002 c002"
+        "pf pf pf pf pf pf"
+        "pd pd pd pd pd pd";
+    }
+
+    #pageheader{
+        background-color:#4E5946 ;
+        min-height:150px;
+        padding:1rem;
+        grid-area: hd;
+        font-size: 52px;
+        min-height: 2rem;
+        text-align: center;
+    }
+
+    #intromedia{
+        background-color: #818C70;
+        min-height: 250px;
+        padding:1rem;
+        grid-area: in;
+    }
+
+    #mainnav{
+        background-color: #777e6b;
+        min-height: 30px;
+        padding:1rem;
+        grid-area: mn;
+    }
+
+
+    #pagemain{
+        background-color: #7b8073;
+        min-height: 200px;
+        padding:1rem;
+        grid-area: pm;
+    }
+
+    #card001{
+        background-color: #5e6157; 
+        min-height: 150px;
+        padding:1rem;
+        grid-area: c001;
+    }
+
+    #card002{
+        background-color: rgb(255,204,206);
+        min-height: 150px;
+        padding:1rem;
+        grid-area: c002;
+    }
+
+    #pagefooter{
+        background-color:rgb(254,229,225);
+        min-height: 50px;
+        padding:1rem;
+        grid-area: pf;
+    }
+
+    #pagedetails{
+        background-color: rgb(254, 245, 244); 
+        min-height: 200px;
+        padding:1rem;
+        grid-area: pd;
+        }
+
+        .fishie{
+            background-image: url(Images/clownfish.png);
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            position: relative;
+            top: -1200px;
+            left: -25px;
+        }
+        
+
+</style>
+<body>            
+        <div id="container">
+            <div id="wrapper">
+                <div id="logo"></div>
+
+            <header id="pageheader">Central Valley Pets</header>
+            <nav id="mainnav">            
+                <div id="fishie"></div></nav>
+            <div id="intromedia">intromedia</div>
+            <main id="pagemain">pagemain</main>
+            <section id="card001">card001</section>
+            <section id="card002">card002</section>
+            <footer id="pagefooter">pagefooter</footer>
+            <footer id="pagedetails">pagedetails</footer>
+
+
+        </div>  
+        </div>
+</body>
+</html>

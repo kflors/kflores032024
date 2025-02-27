@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox List</title>
+    <style>
+        /* Moblie First */
+        h1{
+            text-align: center;
+        }
+        nav{
+            background-color: rgb(133, 157, 202);
+            padding: 1rem;
+        }
+
+        ul{
+            background-color: aliceblue;
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        li{
+            background-color: rgb(216, 216, 216);
+            padding: 1rem;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        /* Desktop Second */
+        @media screen and (min-width:768px){
+            body{
+                background-color: rebeccapurple;
+            }
+
+            ul{
+                flex-direction: row;
+                gap: 10px;
+                justify-content: center;
+            }
+
+            li{
+                min-width: 100px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox List</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="whyadopt.html">Why Adpot</a></li>
+            <li><a href="ouranimals.html">Our Animals</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
