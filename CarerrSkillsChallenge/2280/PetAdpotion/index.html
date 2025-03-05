@@ -7,104 +7,105 @@
 </head>
 <style>
     body{
-        background-image: url(Images/grewnwp.jpg);
+        background-image: url(Images/babyblue.jpg);
+        background-image: no-repeat;
     }
 
     #logo {
-            width: 100px;
-            height: 100px;
-            background-image: url('Images/logo2.jpg');
-            background-size: cover;
-            background-position: center;
-            border-radius: 50%;
-            position: relative;
-            top: -1200px;
-            left: -25px;
+		width: 150px;
+		height: 120px;
+		position: absolute;
+		top: 5px;
+		left: 90px;
+		background-image:url(Images/logo2.jpg);
+		border-radius: 100%;
         }
 
     #container{
         color: rgb(42, 42, 42);
         margin: auto;
-        border: 2rem solid rgba(220, 217, 217, 0.79);
+        border: 2rem solid rgb(231 234 241);
         max-width: 1200px;
         width:85%
     }    
     #wrapper{
         gap: 10px;
         display: grid;
-        background-color: rgb(213, 213, 213); 
+        background-color: rgb(210 216 227); 
         grid-template-areas: 
         "hd hd hd hd hd hd"
         "in in in in in in"
         "mn mn pm pm pm pm"
         "mn mn c001 c001 c002 c002"
-        "pf pf pf pf pf pf"
-        "pd pd pd pd pd pd";
+        "pf pf pf pf pf pf";
     }
 
     #pageheader{
-        background-color:#4E5946 ;
-        min-height:150px;
-        padding:1rem;
+        background-color:rgb(204 203 214) ;
+        background-image: url(Images/adopt_puppy.jpg);
+        min-height:250px;
+        padding:2rem;
         grid-area: hd;
-        font-size: 52px;
-        min-height: 2rem;
-        text-align: center;
     }
 
     #intromedia{
-        background-color: #818C70;
+        background-color: rgb(252 251 251);
         min-height: 250px;
         padding:1rem;
         grid-area: in;
     }
 
+    .slideto{
+        animation-name: slideto;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: 3;
+    }
+
+
+
+
+
     #mainnav{
-        background-color: #777e6b;
+        background-color: rgb(195 201 210);
         min-height: 30px;
         padding:1rem;
         grid-area: mn;
+        color: aliceblue;
     }
 
 
     #pagemain{
-        background-color: #7b8073;
+        background-color: rgb(208 212 211);
         min-height: 200px;
         padding:1rem;
         grid-area: pm;
     }
 
     #card001{
-        background-color: #5e6157; 
+        background-color: rgb(220 212 222); 
         min-height: 150px;
         padding:1rem;
         grid-area: c001;
     }
 
     #card002{
-        background-color: rgb(255,204,206);
+        background-color: rgb(220 212 222);
         min-height: 150px;
         padding:1rem;
         grid-area: c002;
     }
 
     #pagefooter{
-        background-color:rgb(254,229,225);
-        min-height: 50px;
+        background-color:rgb(244 252 251);
+        min-height: 70px;
         padding:1rem;
         grid-area: pf;
     }
 
-    #pagedetails{
-        background-color: rgb(254, 245, 244); 
-        min-height: 200px;
-        padding:1rem;
-        grid-area: pd;
-        }
-
         .fishie{
-            background-image: url(Images/clownfish.png);
-            width: 100px;
+            background-image: url(Images/fishie.png);
+            width: 300;
             height: 100px;
             background-size: cover;
             background-position: center;
@@ -114,6 +115,24 @@
             left: -25px;
         }
         
+        nav#mainnav ul{
+            display: block;
+            line-height: 2.7;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+            list-style-type: none;
+            
+        }
+
+        a{
+            color: aliceblue;
+        }
+
+        a:hover{
+            color: rgb(209, 215, 221);
+            text-decoration:overline;
+        }
 
 </style>
 <body>            
@@ -121,15 +140,21 @@
             <div id="wrapper">
                 <div id="logo"></div>
 
-            <header id="pageheader">Central Valley Pets</header>
-            <nav id="mainnav">            
+            <header id="pageheader">
+            </header>
+            <nav id="mainnav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="whyadopt.html">Why Adpot?</a></li>
+                    <li><a href="joysofpets.html">Joys of Pets</a></li>
+                    <li><a href="testimonial">Testimonial</a></li>
+                </ul>
                 <div id="fishie"></div></nav>
             <div id="intromedia">intromedia</div>
             <main id="pagemain">pagemain</main>
             <section id="card001">card001</section>
             <section id="card002">card002</section>
             <footer id="pagefooter">pagefooter</footer>
-            <footer id="pagedetails">pagedetails</footer>
 
 
         </div>  
