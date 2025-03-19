@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="external.css">
+    <link rel="icon" href="Images/marslogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <title>Journey to Mars</title>
+</head>
+<body>
+    <nav id="topnav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mep.html">MEP</a></li>
+            <li><a href="missions.html">Missions</a></li>
+            <li><a href="why.html">Why?</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="donations.html">Donations</a></li>
+        </ul>
+    </nav>
+
+    
+    <div id="container">
+        <header id="pageheader">
+            <h1>Journey To Mars</h1>
+        </header>
+        <div id="wrapper">
+            <div id="media">
+                <!-- <div id="slideshow"></div> -->
+                <div id="hamburger-menu"></div>
+                <div id="logo"></div>
+
+                <div id="modalmenu">
+                    <img src="Images/closex.png" alt="Close" id="closex">
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <a href="mep.html">MEP</a>
+                        <a href="missions.html">Missions</a>
+                        <a href="why.html">Why?</a>
+                        <a href="resources.html">Resources</a>
+                        <a href="donations.html">Donations</a>
+                    </nav>
+                </div>
+                
+            </div>
+
+            <main>
+
+                <h3>The Mars Exploration Program</h3>
+                <p>
+                    The Mars Exploration Program is committed to unlocking the mysteries of the Red Planet by deploying a sophisticated fleet of robotic orbiters, landers, and rovers. These advanced systems work together, transmitting invaluable scientific data through a high-speed Mars-Earth communications network.  
+                    This program, driven by cutting-edge technology and scientific curiosity, seeks to: </p>
+                    <ul>
+                        <li>Investigate the origins and early development of Mars as a planetary body.</li>
+                        <li>Examine the geological and climatic changes that have shaped its surface over time.</li>
+                        <li>Explore the possibility that Mars once supported—or may still support—life. </li>
+                        <li>Lay the groundwork for future human missions and deepen our understanding of how Mars compares to Earth.</li>
+                    </ul>
+
+                    <p>By studying Mars, we gain critical insights into our solar system’s history and take significant steps toward the future of interplanetary exploration.</p>
+            </main>
+
+            <section id="sectionone" class="cards"><a href="mep.html">MEP</a></section>
+            <section id="sectiontwo" class="cards"><a href="missions.html">Missions</a></section>
+            <section id="sectionthree" class="cards"><a href="why.html"> Why? </a></section>
+            <section id="sectionfour" class="cards"><a href="resources.html"> Resources </a></section>
+            <section id="sectionfive" class="cards"><a href="https://science.nasa.gov/mars/" target="_new"> NASA</a></section>
+            <section id="sectionsix" class="cards"><a href="donations.html"> Donations </a></section>
+
+            <footer id="pagefooter"></footer>
+            <footer id="subfooter"> © Career Skills Challenge</footer>
+
+
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                const hamburgerMenu = document.querySelector("#hamburger-menu");
+                const modalMenu = document.querySelector("#modalmenu");
+                const closeX = document.querySelector("#closex");
+
+                // Open modal when clicking hamburger menu
+                hamburgerMenu.addEventListener("click", function() {
+                    modalMenu.style.display = "block";
+                });
+
+                // Close modal when clicking the "X"
+                closeX.addEventListener("click", function() {
+                    modalMenu.style.display = "none";
+                });
+
+                // Close modal if clicking outside menu
+                window.addEventListener("click", function(event) {
+                    if (event.target === modalMenu) {
+                        modalMenu.style.display = "none";
+                    }
+                });
+            });
+
+            </script>
+        </div>
+    </div>
+</body>
+</html>

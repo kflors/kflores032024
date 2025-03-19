@@ -3,13 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="apple-touch-icon" href="Images/bat-ezgif.com-resize.gif">
+<link rel="icon" href="Images/starlogo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shafarik&display=swap" rel="stylesheet">
 <title>Karen Flores - Portfolio</title>
-
-
     <style>
     /* Mobile First Design */
     :root
@@ -51,7 +49,8 @@
 
     .logo {
             background-size: cover;
-            position: relative;
+            position: absolute;
+            z-index: 1;
             top: -30px;
             border-radius: 50%;
             left: calc(50% - 50px);
@@ -85,6 +84,31 @@
     /* left: calc(50% - 154px); */
     /* justify-content: space-around; */
     }
+
+    #topnav {
+        background-color: #251333ba;
+        min-height: 75px;
+        padding: 1rem;
+        text-align: center;
+    }
+
+
+#topnav .container{
+    min-height: 2rem;
+}
+
+#topnav a:hover{
+        color: #ffffff99;
+    }
+
+.topnav{
+    display: none;
+    text-decoration: none;
+    background-color: #26133378;
+    
+
+}
+
 
     #media {
         /* background-image: url(Images/image.png); */
@@ -145,12 +169,20 @@
         color: white; 
     }
 
+    #pagenav a:hover{
+        color: #ffffff99;
+    }
+
+
+
+
     p{
         line-height: 1.7;
     }
 
     blockquote{
         margin: top;
+        padding: 2.5rem;
     }
 
     #top
@@ -221,16 +253,25 @@
         </blockquote>
     <nav id="pagenav">
         
-        <a href="#career"> career </a>
-        |
-        <a href="#semesterI"> semesters </a>
-        |
-        <a href="#keyassignments"> key assignments </a>
+        <a href="index.html"> home</a> | 
+        <a href="certifcates.html"> certificates</a> | 
+        <a href="worksamples.html" > work samples</a> 
     </nav>
 
 </div>
     </header>
     <!-- end pageheader -->
+
+        <!-- begin topnav -->
+        <footer id="topnav">
+            <div class="container">
+                <a href="#career"> career</a> | 
+                <a href="#semesterI">semesters</a> | 
+                <a href="#keyassignments"> key assignments</a> 
+        </div> 
+            
+            </footer>
+        <!-- end topnav -->
 
     <!-- begin media -->
     <section id="media">
@@ -301,7 +342,7 @@
         <a href="Demos/FloatedImages/centeredimages.html" target="_new"> Floated Images</a> <br /> 
         <a href="Demos/FlexboxList/FlexboxList.html" target="_new"> Flexbox</a> <br /> 
         <a href="CarerrSkillsChallenge/2280/PetAdpotion/index.html" target="_new"> Pet Adoption</a> <br /> 
-        
+        <a href="CarerrSkillsChallenge/2280/JourneytoMars/index.html" target="_new"> Journey to Mars</a>
     </div>
     </section>
     <!-- end semester2 -->
@@ -321,7 +362,7 @@
     <!-- begin pagefooter -->
     <footer id="pagefooter">
         <div class="container">
-            <a href="">chago</a> |
+            <a href="https://chago.dev">chago</a> |
             <a href="https://colordesigner.io/" target="new">colorscheme</a> | 
             <a href="https://coalingahuron.aeries.net/" target="new">Aeries</a> | 
             <a href="https://chs.chusd.org/o/chs" target="new">CHS</a> | 
@@ -360,7 +401,6 @@
     </div>
 </footer>
 
-
 <p>
     ☆ Karen Flores  2024 -
     <script>
@@ -371,8 +411,6 @@
 
 <div id="top">
     <a href="#Top">Top</a></div>
-
-
 
         </div>
     </footer>
