@@ -1,0 +1,206 @@
+    /* Mobile First Design */
+    :root
+        {
+            --color-primary:#261333;
+            --color-secondary:black ;
+            --color-tertiary:#4A4950;
+            --color-quaternary:#EDDEE2; }
+
+    html {
+        scroll-behavior: smooth;
+        filter: (70%);
+        cursor: url(Images);
+    }
+
+    body {
+    background-color: var(--color-primary);
+    background-image: url('Images/6f2047893436c6e821286a732d56464d.jpg');
+    background-position: center; 
+    color: var(--color-quaternary);
+}
+
+
+
+    .container {
+            min-height: 12rem;
+            max-width: 75rem;
+            margin: auto;
+            padding: 1rem 3rem 1rem 3rem;
+            border-radius: 1.5rem;
+            position: relative;
+        }
+
+    #pageheader {
+            background-color: #261333bb;
+            min-height: 200px;
+            padding: 1rem;
+    }
+
+    .logo {
+            background-size: cover;
+            position: absolute;
+            z-index: 1;
+            top: -30px;
+            border-radius: 50%;
+            left: calc(50% - 50px);
+            transition: all 2s;
+    }
+
+    .logo img {
+        width: 100px; 
+        height: 100px; 
+        border-radius: 40%;
+        transition: all 2s;
+    }
+
+    p{
+        text-align: center;
+    }
+    
+
+    #pagenav {
+        color: aliceblue;
+        min-height: 40px;
+        width: 300px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        bottom: 0px;
+        left: calc(50% - 150px);
+
+    /* left: calc(50% - 154px); */
+    /* justify-content: space-around; */
+    }
+
+    #topnav {
+        background-color: #251333ba;
+        min-height: 75px;
+        padding: 1rem;
+        text-align: center;
+    }
+
+
+#topnav .container{
+    min-height: 2rem;
+}
+
+#topnav a:hover{
+        color: #ffffff99;
+    }
+
+.topnav{
+    display: none;
+    text-decoration: none;
+    background-color: #26133378;
+    
+
+}
+
+
+    #media {
+        /* background-image: url(Images/image.png); */
+        min-height: 300px;
+        padding: 1rem;
+    }
+
+    #career {
+        background-color: var(--color-primary);
+        min-height: 200px;
+        color: #ffffff;
+        padding: 1rem;
+    }
+
+    #pagecontent {
+        background-color: var(--color-primary);
+        min-height: 200px;
+        padding: 1rem;
+    }
+
+    #semester1 {
+        background-color: var(--color-primary);
+        min-height: 200px;
+        padding: 1rem;
+    }
+
+    #semester2 {
+        background-color: var(--color-primary);
+        min-height: 200px;
+        padding: 1rem;
+    }
+
+    #pagefooter {
+        background-color: var(--color-primary);
+        min-height: 75px;
+        padding: 1rem;
+        text-align: center;
+    }
+
+
+#pagefooter, #subfooter, .container{
+    min-height: 2rem;
+}
+
+.footerlinks{
+    display: none;
+}
+
+#subfooter{
+        min-height: 200px;
+        background-color:var(--color-primary); 
+        padding: 1rem;
+        text-align: center;
+} 
+
+    a{
+        padding: .5rem;
+        color: white; 
+    }
+
+    #pagenav a:hover{
+        color: #ffffff99;
+    }
+
+
+
+
+    p{
+        line-height: 1.7;
+    }
+
+    blockquote{
+        margin: top;
+        padding: 2.5rem;
+    }
+
+    #top
+        {
+            background-image: url(Images/crcaig-removebg-preview.png);
+            background-size: contain;
+            width: 100px;
+            height: 100px;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            border-radius: 50%;
+        }
+
+
+    /* Tablet and Desktop Styles */
+
+    @media screen and (min-width: 768px) {
+        #flexsubfooter {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .footerlinks {
+            display: block;
+            min-width: 300px;
+        }
+    }
+
+

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/marslogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Grid Layout </title>
+</head>
+<body>
+    
+    <style>
+        /* Moblie Design */
+        body{
+            background-image: url(Images/bc.jpg);
+            background-size: cover;
+        }
+
+        #container{
+            background-color: #8499B1;
+            max-width: 1200px;
+            width: 90%;
+            padding: 1rem;
+            padding-top: 100px;
+            padding-bottom: 20px;
+            margin: auto;
+        }
+
+        #wrapper{
+            background-color: #80839F;
+            max-width: 90%;
+            padding: 1rem;
+            display: grid;
+            gap: 1rem;
+            margin: auto;
+            grid-template-columns: 1fr; 
+            grid-template-rows: repeat(8, minmax (150px, auto) ); 
+            grid-template-areas: 
+            "md"
+            "mdn"
+            "mn"
+            "sec1"
+            "sec2"
+            "sec3"
+            "pgf"
+            "sf"; 
+        }
+
+        #media{
+            background-color: #7B6D8D;
+            padding: 1rem;
+            grid-area: md;
+        }
+
+        #logo{
+            background-color: aliceblue;
+            width: 95px;
+            height: 95px;
+            position: relative;
+            top: -90px;
+            left: -55px;
+            border-radius: 100%;
+        }
+
+
+    #pageheader{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color:#A5C4D4 ;        
+        color: white;
+        font-size: 20px;
+        box-shadow: 0 0 10px black;
+        padding: 10px 0;
+        list-style: none;
+    }
+
+    #pageheader ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+        margin: auto;
+}
+
+    #pageheader ul li {
+        display: inline;
+    }
+
+    #pageheader ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: 0.3s;
+    }
+
+    #topnav ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+    }
+
+        #midnav {
+            background-color: #6A5678;
+            grid-area: mdn;
+            
+        }
+
+        #midnav ul{
+            list-style: none;
+            gap: 1rem;
+        }
+
+        main{
+            background-color: #593F62;
+            padding: 1rem;
+            grid-area: mn;
+        }
+
+        a{
+            color: aliceblue;
+        }
+
+        /* Cards Sections 3 */
+        .cards{
+            background-color: aliceblue;
+            padding: 1rem;
+            border: 1px solid silver;
+            border-radius: 6px;
+        } 
+
+        #sectionone{
+            grid-area: sec1;
+
+        }
+
+        #sectiontwo{
+            grid-area: sec2;
+        }
+
+        #sectionthree{
+            grid-area: sec3;
+        }
+
+        #pagefooter{
+            background-color:#482A40;
+            padding: 1rem;
+            grid-area: pgf;
+        }
+
+        #subfooter{
+            background-color: #36151E;
+            padding: 1rem;
+            grid-area: sf;
+        }
+
+
+        /* Desktop design */
+
+        @media screen and (min-width:768px){
+            #wrapper{
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 
+                minmax(300px, auto) 
+                minmax(500px, auto) 
+                minmax(250px, auto) 
+                minmax(150px, auto) 
+                minmax(150px, auto) ;
+                grid-template-areas: 
+                    "md md md"
+                    "mdn mn mn"
+                    "sec1 sec2 sec3"
+                    "pgf pgf pgf"
+                    "sf sf sf"
+            }
+        }
+
+
+    </style>
+    <body>
+    
+        </header>
+            <nav id="pageheader"> #pageheader
+                <ul>
+                    <li><a href="https://yahoo.com/"> Yahoo</a></li>
+                    <li><a href="https://yahoo.com/"> Yahoo</a></li>
+                    <li><a href="https://yahoo.com/"> Yahoo</a></li>
+                    <li><a href="https://yahoo.com/"> Yahoo</a></li>
+                </ul>
+            </nav>
+
+        <div id="container">
+        <div id="wrapper">
+            <div id="media">
+                <div id="logo"></div>
+            </div>
+            <nav id="midnav">
+                <ul>
+                    #midnav
+                    <li><a href="https://yahoo.com/"> Yahoo</a></li>
+                    <li><a href="https://yahoo.com/"> Yahoo</a></li>
+                    <li><a href="https://yahoo.com/"> Yahoo</a></li>
+                    <li><a href="https://yahoo.com/"> Yahoo</a></li>
+                </ul>
+
+            </nav>
+
+            <main>
+                <p>main -layoutone</p>
+            </main>
+
+            <section id="sectionone" class="cards">uno</section>
+            <section id="sectiontwo" class="cards">dos</section>
+            <section id="sectionthree" class="cards">tres</section>
+
+            <footer id="pagefooter">pagefooter</footer>
+            <footer id="subfooter">subfooter</footer>
+            
+        </div>
+    </div>
+    <!-- End Container -->
+
+</body>
+</html>
