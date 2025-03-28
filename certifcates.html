@@ -9,8 +9,93 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shafarik&display=swap" rel="stylesheet">
 <title>Karen Flores - Certificates</title>
+<style>
+    * {
+        box-sizing: border-box
+    }
+    .mySlides {
+        display: none
+    }
 
-    </style>
+    img {
+        vertical-align: middle;
+    }
+
+    .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    }
+
+    .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    }
+
+    .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    }
+
+    .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    }
+
+    .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    }
+
+
+    .active, .dot:hover {
+    background-color: #717171;
+    }
+
+    .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+    from {
+        opacity: .4
+    } 
+    to {
+        opacity: 1
+    }
+    }
+
+    @media only screen and (max-width: 300px) {
+    .prev, .next,.text 
+    {
+        font-size: 11px}
+    }
+
+</style>
+
     </head>
     <body>
     <!-- begin pageheader -->
@@ -42,37 +127,57 @@
             </section>
     end media--->
 
-    <!-- begin career -->
-    <!-- <section id="career">
-        <div class="container">
-        <a name="career"></a>
-        <h2>Career</h2>
-        <ul>
-            <li><a href="Career/Letter of Introduction.pdf">Letter of Introduction</a></li>
-            <li><a href="Career/Resume.pdf">Resume</a></li>
-            <li><a href="Career/References.pdf">References</a></li>
-            <li><a href="Career/Kami Export - Karen Flores - Sample Application.pdf">Job Application</a></li>
-            <li><a href="Career/Career Action Plan.pdf">Career Plan</a></li>
-            <li><a href="">Work Samples</a></li>
-            <li><a href="">Certificates</a></li>
-
-        </ul>
-    </div>
-    </section> -->
-    <!-- end career -->
-
     <!-- begin pagecontent -->
     <main id="pagecontent">
         <div class="container">
             <h1>Certificates</h1>
-            <p>
-                Hai and welcome to my portfolio!! I'm Karen. I'm currently a junior and taking Web App Develpment!  I also TA for Chagoyan. A little about me is that a like stars and listening to music. I like recommending music to my friends and being able to discover new music. Some of my reccomendation at the moment would be First Two Seven Inches, Internal Riot, She Only Said, 1-2-3-4, and Alcopops &amp; Charity Shops. I can play piano and guitar and hope to learn more instruments later on in the future. I kinda know how to play MTG. I luv South Park and my favorite is Craig.
-            </p>
-        </div>
+
+            <!-- Slideshow for Certificates -->
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                <img src="Certificates/WebAppDevMyCareer Tech - Adaptability.jpg" style="width:100%">
+            
+                </div>
+            
+                <div class="mySlides fade">
+                <img src="Certificates/WebAppDevMyCareer Tech - Communication.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides fade">
+                <img src="Certificates/WebAppDevMyCareer Tech - CreativityandInnovation.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides fade">
+                <img src="Certificates/WebAppDevMyCareer Tech - CriticalThinking.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides fade">
+                <img src="Certificates/WebAppDevMyCareer Tech - CustomerService.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                <img src="Certificates/WebAppDevMyCareer Tech - Professionalism.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides fade">
+                <img src="Certificates/WebAppDevTypingCertificate.jpg" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            
+                </div>
+                <br>
+            
+                <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+            <!-- End of Certificates -->
         </main>    
     </main>
     <!-- end pagecontent -->
-
 
     <!-- begin pagefooter -->
     <footer id="pagefooter">
@@ -120,6 +225,33 @@
     ☆ Karen Flores  2024 -
     <script>
         window.document.write(new Date().getFullYear());
+
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    }
     </script>
 </p>
 
