@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+<style>
+
+    body{
+        text-align: center;
+        background-color: #D8A7AA;
+    }
+
+    h1{
+        color: whitesmoke;
+
+    }
+
+    #formcontainer{
+        width: 60%;
+        max-width: 600px;
+        min-height: 300px;
+        padding: 1rem; 
+        border: 2px solid black;
+        margin: auto;
+        background-color: #F6D3D1;
+    }
+
+    p{
+        background-color: whitesmoke;
+        border: 1px solid black;
+        padding: 1rem;
+        margin: auto;
+        max-width: 500px;
+        min-height: 200px;
+    }
+
+</style>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+
+    <div id="formcontainer">
+<fieldset>
+    <legend>Text Input Element</legend>
+            <label for="textname">Enter Your Name</label><br>
+            <input type="text" id="textid" placeholder="Your Name">
+            <br> 
+            <button id="savetext">Save Text to Local Storage</button>
+            <button id="loadtext">Load Text from Local Storage</button>
+</fieldset>
+
+
+    <fieldset>
+        <legend>Radio Input Element</legend>
+        <input type="radio" id="radhtml" value="html"name="language"><label for="radhtml">HTML</label>
+        <input type="radio" id="radcss" value="css" name="language" ><label for="radhtml">CSS</label>
+        <input type="radio" id="radjava" value="javascript" name="language"><label for="radjavascript">Javascript</label> <br>
+        <button id="saveradio">Save Radio to Local Storage</button>
+        <button id="loadradio">Load Radio from Local Storage</button>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Select Element</legend>
+        <select name="themeselector" id="themeselector">
+            <option value="greentheme">Green Theme</option>
+            <option value="silvertheme">Silver Theme</option>
+            <option value="goldtheme">Gold Theme</option> 
+        </select>
+        <br>
+        <button id="saveselect">Save Select to Local Storage</button>
+        <button id="loadselect">Load Select from Local Storage</button>
+    </fieldset>
+
+    <p name="paragraphoutput" id="paragraphoutput">
+
+    </p>
+    </div>
+</body>
+</html>

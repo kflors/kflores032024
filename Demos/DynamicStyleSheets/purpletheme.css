@@ -2,7 +2,9 @@ body{
     background-color: rgb(157, 95, 215);
 }
 
+
 h1{
+    color: whitesmoke;
     text-align: center;
-    background-color:whitesmoke ;
+
 }
