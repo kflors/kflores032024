@@ -35,12 +35,53 @@
         min-height: 200px;
     }
 
+    fieldset{
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    legend{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    label{
+        padding: .25rem;
+    }
+
+    input[type="text"]{
+        background-color: white;
+        border: 2px solid black;
+    }
+
+    input[type="text"]::placeholder{
+        color: grey;
+        font-style: italic;
+    }
+
+    button{
+        padding: 1rem; 
+        background-color: #D8A7AA;
+        color: whitesmoke;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
+
+    input[name="language"]{
+        outline: 2px solid black;
+        outline-style: dashed;
+    }
+
+    input[name = "language"]:checked{
+        accent-color: #9f7c7e;
+        /* outline-color: #9f7c7e; */
+    }
 </style>
 </head>
 <body>
     <h1>HTML Forms</h1>
 
     <div id="formcontainer">
+
 <fieldset>
     <legend>Text Input Element</legend>
             <label for="textname">Enter Your Name</label><br>
@@ -56,8 +97,8 @@
         <input type="radio" id="radhtml" value="html"name="language"><label for="radhtml">HTML</label>
         <input type="radio" id="radcss" value="css" name="language" ><label for="radhtml">CSS</label>
         <input type="radio" id="radjava" value="javascript" name="language"><label for="radjavascript">Javascript</label> <br>
-        <button id="saveradio">Save Radio to Local Storage</button>
-        <button id="loadradio">Load Radio from Local Storage</button>
+        <button id="savedradiobutton">Save Radio to Local Storage</button>
+        <button id="loadradiobutton">Load Radio from Local Storage</button>
     </fieldset>
 
 
@@ -77,5 +118,57 @@
 
     </p>
     </div>
-</body>
-</html>
+
+
+<script>
+    const paragraphOutput = document.getElementById('paragraphoutput');
+
+let saveTextButton = document.querySelector('#savetext');
+let loadTextButton = document.querySelector('#loadtext');
+
+saveTextButton.addEventListener('click', function () {
+    let textName = document.querySelector('#textid').value;
+
+    if (textName.trim() !== "") {
+        localStorage.setItem('textUserName0522', textName);
+    } else {
+        alert("Please enter a name before saving.");
+    }
+});
+
+loadTextButton.addEventListener('click', function () {
+    let savedTextName = localStorage.getItem('textUserName0522');
+
+    if (savedTextName !== null) {
+        paragraphOutput.textContent = `Hai, ${savedTextName}`;
+    } else {
+        paragraphOutput.textContent = "No name found in local storage.";
+    }
+});
+
+/*
+Radio Section
+*/
+
+let savedRadioButton; 
+savedRadioButton = document.querySelector('#savedradiobutton'); 
+//alert(savedradiobutton);
+let loadRadioButton; 
+loadRadioButton = document.querySelector('#loadradiobutton'); 
+// alert(loadradiobutton); 
+savedRadioButton.addEventListener('click', function() {
+    let selectedRadio; 
+    selectedRadio = document.querySelector('input[name="language"]:checked');
+    
+    // alert(selectedRadio); 
+
+    if(selectedRadio == null){
+        alert('Please select the language before saving.'); 
+    }
+
+    else{
+        localStorage.setItem('selectedLanguage2280', selectedRadio.value); 
+    }
+}); 
+
+</script>
