@@ -9,7 +9,7 @@
     html {
         scroll-behavior: smooth;
         filter: (70%);
-        cursor: url(Images);
+        /* cursor: url(Images/crcaig-removebg-preview.png); */
     }
 
     body {
@@ -17,7 +17,10 @@
     background-image: url('Images/6f2047893436c6e821286a732d56464d.jpg');
     background-position: center; 
     color: var(--color-quaternary);
+    cursor: url("cursor.png"), auto;
 }
+
+
 
 
 
@@ -176,7 +179,7 @@
 
     #top
         {
-            background-image: url(Images/crcaig-removebg-preview.png);
+            background-image: url(Images/ElissabatSkullette.png);
             background-size: contain;
             width: 100px;
             height: 100px;
