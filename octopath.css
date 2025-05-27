@@ -1,0 +1,217 @@
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-primary: #7B6F63;
+    --color-secondary: #463827;
+    --color-accent: #9c7c55;
+}
+
+body {
+    margin: 0;
+    font-family: 'Shafarik', sans-serif;
+    color: #fff;
+    scroll-behavior: smooth;
+    filter: brightness(80%);
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
+    background: #fff;
+    color: #000;
+}
+
+#pageheader {
+    background-color: var(--color-primary);
+    text-align: center;
+    padding: 2rem 1rem 3rem;
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 75px);
+    transition: all 2s;
+}
+
+#logo:hover {
+    transform: rotate(-45deg);
+}
+
+#selstylesheet {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+blockquote {
+    font-style: italic;
+    margin-top: 1.5rem;
+    font-size: larger;
+}
+
+    
+    .career-img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+#media {
+    padding: 1rem;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 150px;
+    background-image: url('Images/Octopath-Traveler-Header-ezgif.com-avif-to-jpg-converter.jpg');
+    width: 100%;
+}
+
+#media .container {
+    display: flex;
+    justify-content: center;
+    align-items: center};
+
+
+#media img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;}
+
+
+
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    margin: 0 10px;
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--color-accent);
+}
+
+section {
+    margin-top: 2rem;
+    background-color: var(--color-primary);
+    padding: 1rem;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #000;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section li {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: #000000;
+}
+
+a:hover {
+    color: var(--color-accent);
+}
+
+footer {
+    background-color: var(--color-primary);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer .container {
+    min-height: 2rem;
+}
+
+#subfooter {
+    background-color: var(--color-primary);
+    padding: 1rem;
+}
+
+#flexsubfooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footerlinks {
+    display: none;
+}
+
+p{
+    text-align: center;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    #flexsubfooter {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footerlinks {
+        display: block;
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #media {
+        display: none;
+    }
+
+    #logo {
+        left: 75%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #logo {
+        left: 5%;
+    }
+
+    #pagenav {
+        top: 0px;
+        right: 0px;
+        left: auto;
+        bottom: auto;
+        background-color: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #pagenav {
+        top: 0px;
+        right: 0px;
+        left: auto;
+        bottom: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #media {
+        height: 600px;
+    }
+}

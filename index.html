@@ -3,32 +3,104 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="Images/starlogo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- <link rel="stylesheet" href="style.css"> -->
+<link id="favicon" rel="icon" href="Images/starlogo.png">
+<link id="linkTheme" rel="stylesheet" href="elissabat.css"><!-- main -->
+<link href="https://fonts.googleapis.com/css2?family=Shafarik&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shafarik&display=swap" rel="stylesheet">
-<title>Karen Flores - Portfolio</title>
+<style>
+
+    html{
+        overscroll-behavior: none;
+        overflow-x: hidden; 
+        scroll-behavior: smooth;
+    }
+
+        #career .container ul{
+        background-color: none;
+        list-style-type: none;
+        padding: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        max-width: 1500px;
+        margin: auto;
+    }
+
+    #career .container ul li{
+        /* background-color: #8766a9;  */
+        border: .5px solid black;
+        width: 200px;
+        height: 200px;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    #career li img{
+        width: 50%;
+        display: block;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+#top {
+    display: none; /* hidden initially */
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#selstylesheet{
+    text-align: center;
+    width: 190px;
+}
+
+
+</style>
+<title>Portfolio</title>
+
+<select name="selstylesheet" id="selstylesheet" onchange="updateTheme()">
+    <option value="elissabat.css">Elissabat Theme</option>
+    <option value="everafterhigh.css">Ever After High Theme</option>
+        <option value="octopath.css">Octopath Theme</option>
+    <option value="southpark.css">South Park Theme</option>
+    <option value="rositafresita.css">Strawberry Shortcake</option>
+</select>
+
 
     </style>
     </head>
     <body>
+            <a id="top" href="#pageheader" title="Back to Top"></a>
+
     <!-- begin pageheader -->
     <header id="pageheader">
         
     <div class="container">
         <div class="logo">
             
-            <a href="https://floresren.netlify.app/" target="_new"> <img src="Images/output-onlinegiftools.gif" alt="logo" id="loger"> </a>
+            <a href="https://floresren.netlify.app/" target="_new"> <img src="Images/output-onlinegiftools.gif" alt="logo" id="logo"> </a>
         </div>
-        <blockquote>
+        <blockquote id="quote">
             “In the shadow of the light from a black sun. Frigid statue standing icy blue and numb.”
         </blockquote>
+
+
     <nav id="pagenav">
         
-        <a href="index.html"> home</a> | 
-        <a href="certifcates.html"> certificates</a> | 
-        <a href="worksamples.html" > work samples</a> 
+        <a href='index.html'> home</a> | 
+        <a href='certifcates.html'> certificates</a> | 
+        <a href='worksamples.html'> work samples</a> 
     </nav>
 
 </div>
@@ -57,14 +129,39 @@
         <div class="container">
         <a name="career"></a>
         <h2>Career</h2>
-        <ul>
-            <li><a href="Career/Letter of Introduction.pdf">Letter of Introduction</a></li>
-            <li><a href="Career/Resume.pdf">Resume</a></li>
-            <li><a href="Career/References.pdf">References</a></li>
-            <li><a href="Career/Kami Export - Karen Flores - Sample Application.pdf">Job Application</a></li>
-            <li><a href="Career/Career Action Plan.pdf">Career Plan</a></li>
-            <li><a href="worksamples.html">Work Samples</a></li>
-            <li><a href="certifcates.html">Certificates</a></li>
+    <ul>
+
+    <li>
+        <img id="img-intro" class="career-img" src="Images/Abbey.png" alt="Intro">
+        <br><a href="Career/Letter of Recommendation.pdf" target="_new">Letter of Introduction</a>
+    </li>
+
+    <li>
+        <img id="img-resume" class="career-img" src="Images/Catrine.png" alt="Resume">
+        <br><a href="Career/resume.pdf" target="_new" >Resume</a>
+    </li>
+<li>
+        <img id="img-refs" class="career-img" src="Images/Clawdeen.png" alt="References">
+        <br><a href="Career/References.pdf"  target="_new" >References</a>
+</li>
+
+<li>
+        <img id="img-app" class="career-img" src="Images/Draculaura.png" alt="Job App">
+        <br><a href="Career/Sample Application.pdf"  target="_new" > Job Application</a>
+</li>
+
+<li>
+        <img id="img-plan" class="career-img" src="Images/Operetta.png" alt="Career Plan">
+        <br><a href="Career/Career Action Plan.pdf"  target="_new" > Career Plan</a>
+</li>
+<li>
+        <img id="img-works" class="career-img" src="Images/Sirena.png" alt="Work Samples">
+        <br><a href="worksamples.html"  target="_new" > Work Samples</a>
+</li>
+<li>
+        <img id="img-certs" class="career-img" src="Images/Twyla.png" alt="Certificates">
+        <br><a href="certifcates.html"  target="_new" > Certificates</a>
+</li>
 
         </ul>
     </div>
@@ -75,9 +172,9 @@
     <main id="pagecontent">
         <div class="container">
             <h2>Introduction</h2>
-            <h3>Git Clone</h3>
+            <!-- <h3>Git Clone</h3> -->
             <p>
-                Hai and welcome to my portfolio!! I'm Karen. I'm currently a junior and taking Web App Development!  I also TA for Chagoyan. A little about me is that a like stars and listening to music. I like recommending music to my friends and being able to discover new music. Some of my recommendations at the moment would be First Two Seven Inches, Internal Riot, She Only Said, 1-2-3-4, and Alcopops &amp; Charity Shops. I can play piano and guitar and hope to learn more instruments later on in the future. I kinda know how to play MTG. I luv South Park and my favorite is Craig.
+                Hai and welcome to my portfolio!! I'm Karen. I'm currently a junior and taking Web App Development!  I also TA for Chagoyan. A little about me is that I like stars, listening to music and collecting trinkets. I like recommending music to my friends and being able to expand my music taste. I can play piano and guitar I hope later on I'm able to learn new instruments in the future. I kinda know how to play MTG. I luv South Park and my favorite is Craig.
             </p>
         </div>
         </main>    
@@ -89,15 +186,10 @@
         <div class="container">
         <a name="semesterI"></a>
         <h2>Semester I</h2>
-                <a href="Activties/CanvasSmileyFace/CanvasSmileyFace.html" target="new"> Canvas Smiley Face</a> <br>
-                <a href="Semester1/CanvasDrawing001/canvasdrawing.html" target="new">Canvas Drawing 001</a> <br> 
-                <a href="/Semester1/CanvasDrawing002/CanvasDrawing002.html" target="new">Canvas Drawinf 002</a> <br> 
-                <a href="/Activties/CustomImage/customimage.html" target="new">Custom Objects</a>
-
-
-    </div>
-    </section>
-        
+                <a href='Activties/CanvasSmileyFace/CanvasSmileyFace.html' target='new'> Canvas Smiley Face</a> <br>
+                <a href='Semester1/CanvasDrawing001/canvasdrawing.html' target='new'>Canvas Drawing 001</a> <br> 
+                <a href='Semester1/CanvasDrawing002/CanvasDrawing002.html' target='new'>Canvas Drawing 002</a> <br> 
+                <a href='Activties/CustomImage/customimage.html' target='new'>Custom Objects</a>
     </div>
     </section>
     <!-- end semester1 -->
@@ -107,18 +199,19 @@
         <div class="container">
         <a name="semesterII"></a>
         <h2>Semester II</h2>
-        <a href="Semester2/PersonalizedArray/Personalizedarray.html" target="new">Personalized Array</a> <br />
-        <a href="Projects/PanitingApp/PaintingAppv4.html" target="new">Painting App</a> <br />
-        <a href="CarerrSkillsChallenge/index.html" target="new"> Responsive CSS Grid Areas</a> <br /> 
-        <a href="Activties/GridAreasOnYourOwn1/gridareasonyourown1.html" target="_new"> Grid Areas I (OYO)</a> <br /> 
-        <a href="Activties/GridAreasOnYourOwn2/gridareasonyourown2.html" target="_new">Grid Areas II (OYO)</a> <br /> 
-        <a href="Demos/FloatedImages/centeredimages.html" target="_new"> Floated Images</a> <br /> 
-        <a href="Demos/FlexboxList/FlexboxList.html" target="_new"> Flexbox</a> <br /> 
-        <a href="CarerrSkillsChallenge/2280/PetAdpotion/index.html" target="_new"> Pet Adoption</a> <br /> 
-        <a href="CarerrSkillsChallenge/2280/JourneytoMars/index.html" target="_new"> Journey to Mars</a>  <br /> 
-        <a href="Activties/GridLayouts/GridLayouts.html" target="_new">Grid Layouts</a>  <br /> 
-        <a href="Demos/DynamicStyleSheets/DynamicStyleSheets.html" target="_new">Dynamic Style Sheets</a> <br />
-        <a href="Demos/HTMLForms/HTMLForms.html" target="_new"> HTML Forms</a> <br />
+        <a href='Semester2/PersonalizedArray/Personalizedarray.html' target='new'>Personalized Array</a> <br />
+        <a href='Projects/PanitingApp/PaintingAppv5.html' target='new'>Painting App</a> <br />
+        <a href="Demos/CSSGridarea001/CSSGridarea001.html" target="new"> Responsive CSS Grid Areas</a> <br /> 
+        <a href='Activties/GridAreasOnYourOwn1/gridareasonyourown1.html' target='_new'> Grid Areas I (OYO)</a> <br /> 
+        <a href='Activties/GridAreasOnYourOwn2/gridareasonyourown2.html' target='_new'>Grid Areas II (OYO)</a> <br /> 
+        <a href='Demos/FloatedImages/floatedimages.html' target='_new'> Floated Images</a> <br /> 
+        <a href='Demos/FlexboxList/FlexboxList.html' target='_new'> Flexbox</a> <br /> 
+        <a href='CareerSkillsChallenge/2280/PetAdpotion/index.html' target='_new'> Pet Adoption</a> <br /> 
+        <a href='CareerSkillsChallenge/2280/JourneytoMars/' target='_new'> Journey to Mars</a>  <br /> 
+        <a href='Activties/GridLayouts/GridLayouts.html' target='_new'>Grid Layouts</a>  <br /> 
+        <a href='Demos/DynamicStyleSheets/DynamicStyleSheets.html' target='_new'>Dynamic Style Sheets</a> <br />
+        <a href='Demos/HTMLForms/HTMLForms.html' target='_new'> HTML Forms</a> <br />
+        <a href="Demos/PDFDocuments/PDFDocuments.html" target="_new"> PDF Documents</a> <br />
     </div>
 
     </section>
@@ -155,14 +248,15 @@
 
 <footer id="subfooter">
     <div class="container">
+    <div id="flexsubfooter">
+        <div class="quote">
+        <h3>Final Thoughts</h3>
+        <blockquote 
+        id="finalQuote">"A star's supposed to put a smile on people's faces!"
+    </blockquote>
+        <p id="finalAuthor"> - Agnea</p>
+        </div>
 
-<div id="flexsubfooter">
-            <div class="quote">
-                <h3>Final Thoughts</h3>
-                <blockquote>
-                    "Nobody prays for the heartless. Nobody gives another penny for the selfish." </blockquote>
-                <p>Caraphernelia by Pierce the Veil</p>
-            </div>
             <div class="footerlinks">
                 <h3>Links</h3>
                     <ul>
@@ -174,22 +268,119 @@
 
 </div>
 
-
     </div>
 </footer>
-
 <p>
-    ☆ Karen Flores  2024 -
-    <script>
-        window.document.write(new Date().getFullYear());
-    </script>
-</p>
+    ☆ Karen Flores  2024 - </p>
+<script>
+const linkTheme = document.getElementById('linkTheme');
+const selTheme = document.getElementById('selstylesheet');
 
+function updateTheme() {
+    const selectedTheme = selTheme.value;
+    linkTheme.href = selectedTheme;
+    localStorage.setItem('selectedTheme2280', selectedTheme);
+    updatePageContent(selectedTheme);
+    updateCareerImages(selectedTheme);
+}
+function updatePageContent(theme) {
+    const logo = document.getElementById('logo');
+    const favicon = document.getElementById('favicon');
+    const quote = document.getElementById('quote');
+    const finalQuote = document.getElementById('finalQuote');
+    const finalAuthor = document.getElementById('finalAuthor');
+    const topButton = document.getElementById('top');
 
-<div id="top">
-    <a href="#Top">Top</a></div>
+    switch (theme) {
+        case 'elissabat.css':
+            logo.src = 'Images/output-onlinegiftools.gif';
+            favicon.href = 'Favicon/f784bea08c9c1e27233316fdc2f93ffd-removebg-preview (1).png';
+            quote.textContent = "In the shadow of the light from a black sun. Frigid statue standing icy blue and numb.";
+            finalQuote.textContent = 'Nobody prays for the heartless. Nobody gives another penny for the selfish.';
+            finalAuthor.textContent = '- Caraphernelia by Pierce the Veil';
+            topButton.style.backgroundImage = "url('Images/ElissabatSkullette.png')";
+            break;
 
-        </div>
+        case 'everafterhigh.css':
+            logo.src = 'Images/eah.png';
+            favicon.href = 'Favicon/ea.png';
+            quote.textContent = "Can the musical chair change its tone when the tablet of granite is inscribed with a bone?";
+            finalQuote.textContent = 'The End';
+            finalAuthor.textContent = 'is just the beginning...';
+            topButton.style.backgroundImage = "url('Favicon/ea.png')";
+            break;
+
+        case 'octopath.css':
+            logo.src = 'Favicon/favicon.png';
+            favicon.href = 'Favicon/favicon.png';
+            quote.textContent = '“If I don’t learn about the past, how can I lead my people to a bright future?”';
+            finalQuote.textContent = "A star's supposed to put a smile on people's faces!";
+            finalAuthor.textContent = '- Agnea';
+            topButton.style.backgroundImage = "url('Favicon/favicon.png')";
+            break;
+
+        case 'southpark.css':
+            logo.src = 'Images/Southpark.png';
+            favicon.href = 'Images/Southpark.png';
+            quote.textContent = 'Oh my God, they killed Kenny!';
+            finalQuote.textContent = '"You b******';
+            finalAuthor.textContent = 'Kyle and Stan';
+            topButton.style.backgroundImage = "url('Images/Southpark.png')";
+            break;
+
+        case 'rositafresita.css':
+            logo.src = 'Images/worldoffresca.png';
+            favicon.href = 'Images/strawberrylogo.png';
+            quote.textContent = 'Good morning! Welcome to Strawberryland!';
+            finalQuote.textContent = 'Pick A Berry Sweet Strawberry!';
+            finalAuthor.textContent = 'Strawberry Shortcake';
+            topButton.style.backgroundImage = "url('Images/strawberrylogo.png')";
+            break;
+    }
+}
+
+function updateCareerImages(theme) {
+    const themes = ['elissabat', 'everafterhigh', 'octopath', 'southpark', 'rositafresita'];
+    const themeFolder = themes.includes(theme.replace('.css', '')) ? theme.replace('.css', '') : 'elissabat';
+    const imagePath = `Images/${themeFolder}/`;
+
+    const images = {
+        'img-intro': 'intro.png',
+        'img-resume': 'resume.png',
+        'img-refs': 'refs.png',
+        'img-app': 'app.png',
+        'img-plan': 'plan.png',
+        'img-works': 'works.png',
+        'img-certs': 'certs.png',
+    };
+
+    for (const [id, filename] of Object.entries(images)) {
+        const el = document.getElementById(id);
+        if (el) {
+            el.src = imagePath + filename;
+        }
+    }
+}
+
+window.addEventListener('load', () => {
+    const savedTheme = localStorage.getItem('selectedTheme2280');
+    if (savedTheme) {
+        selTheme.value = savedTheme;
+        linkTheme.href = savedTheme;
+        updatePageContent(savedTheme);
+        updateCareerImages(savedTheme);
+    }
+});
+
+window.addEventListener('scroll', function() {
+    const topButton = document.getElementById('top');
+    if (window.scrollY > 300) {
+        topButton.style.display = 'block';
+    } else {
+        topButton.style.display = 'none';
+    }
+});
+</script>
     </footer>
     </body>
     </html>

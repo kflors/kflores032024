@@ -6,27 +6,7 @@
             --color-tertiary:#4A4950;
             --color-quaternary:#EDDEE2; }
 
-
-        /* Reset browser */
-            *, *::before, **::after{
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-            }
-
-            /* Fix Browser Bounce */
-            body{
-                overflow-x:auto; 
-                width: 100%;
-                overscroll-behavior: none;
-            }
-
-
-
-
-    html {
-        scroll-behavior: smooth;
-        filter: brightness(75%);
+    html {   
         /* cursor: url(Images/crcaig-removebg-preview.png); */
     }
 
@@ -36,11 +16,10 @@
     background-position: center; 
     color: var(--color-quaternary);
     cursor: url("cursor.png"), auto;
+
+
+    
 }
-
-
-
-
 
     .container {
             min-height: 12rem;
@@ -67,6 +46,7 @@
             transition: all 2s;
     }
 
+
     .logo img {
         width: 100px; 
         height: 100px; 
@@ -76,6 +56,10 @@
 
     p{
         text-align: center;
+    }
+
+    a:hover{
+        color: var(--color-tertiary);
     }
     
 
@@ -107,7 +91,7 @@
     min-height: 2rem;
 }
 
-a:hover{
+#topnav a:hover{
         color: #ffffff99;
     }
 
@@ -132,6 +116,44 @@ a:hover{
         color: #ffffff;
         padding: 1rem;
     }
+
+/*     
+        #career .container ul{
+        background-color: none;
+        list-style-type: none;
+        padding: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    #career .container ul li{
+        /* background-color: #8766a9;  
+        border: 1px solid black;
+        width: 120px;
+        height: 120px;
+        padding: 1rem;
+        text-align: center;
+    } 
+
+/* 
+    #career li img{
+        width: 50%;
+        display: block;
+        margin: auto;
+        margin-bottom: 1rem;
+    } */ */
+
+    .career-img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px;
+}
 
     #pagecontent {
         background-color: var(--color-primary);
@@ -195,21 +217,6 @@ a:hover{
         padding: 2.5rem;
     }
 
-    #top
-        {
-            background-image: url(Images/ElissabatSkullette.png);
-            background-size: contain;
-            width: 100px;
-            height: 100px;
-            padding: 1rem;
-            text-align: center;
-            position: fixed;
-            right: 20px;
-            bottom: 20px;
-            border-radius: 50%;
-        }
-
-
     /* Tablet and Desktop Styles */
 
     @media screen and (min-width: 768px) {
@@ -223,5 +230,3 @@ a:hover{
             min-width: 300px;
         }
     }
-
-

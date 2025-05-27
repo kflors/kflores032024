@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSGridArea001</title>
+    <style>
+        #container{
+            border: 5px solid black;
+            display: grid;
+            grid-template-areas: 
+            "header header header header"
+            "media media media media"
+            "navigation main main aside"
+            "footer footer footer footer"
+            "subfooter subfooter subfooter subfooter";
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        header{
+            background-color: rgb(203, 165, 171);
+            min-height: 150px;
+            grid-area: header;
+        }
+
+        #media{
+            background-color:rgb(225, 230, 225);
+            min-height: 150px;
+            grid-area: media;
+        }
+
+        #navigation{
+            background-color:linen;
+            min-height: 150px;
+            grid-area: navigation;
+        }
+
+        main{
+            background-color: rgb(211, 193, 193);
+            min-height: 150px;
+            grid-area: main;
+        }
+
+        aside{
+            background-color: rgb(244, 230, 211);
+            min-height: 150px;
+            grid-area: aside;
+        }
+
+        footer{
+            background-color: rgb(217, 211, 211);
+            min-height: 150px;
+            grid-area: footer;
+        }
+
+        #subfooter{
+            background-color: darkgray;
+            min-height: 150px;
+            grid-area: subfooter;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>Header</header>
+        <div id="media">Media</div>
+        <nav id="navigation">Navigation</nav>
+        <main>Main</main>
+        <aside>Aside</aside>
+        <footer>footer</footer>
+        <footer id="subfooter">Subfooter</footer>
+    </div>
+</body>
+</html>

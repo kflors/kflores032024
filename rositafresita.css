@@ -1,0 +1,243 @@
+        :root {
+        --color-primary: #D15659;
+        --color-secondary: #ffffff; 
+        --color-accent: #FADDEB;
+        }
+
+        body {
+    background-image: url(Images/strawberrybg.jpg); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Shafarik', sans-serif;
+    color: aliceblue;
+    scroll-behavior: smooth;
+    filter: brightness(91%);
+
+}
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 1rem;
+            background: var(--color-secondary);
+            color: #000;
+            /* border: 1px solid #ccc; */
+        }
+
+
+        #pageheader {
+            text-align: center;
+            padding: 2rem 1rem 3rem;
+            scroll-behavior: smooth;
+        }
+
+        #logo {
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            top: 10px;
+            left: -200%;
+            left: calc(50% - 75px);
+            transition: all 2s
+        }
+
+        #logo:hover{
+            transform:rotate(-45deg);
+        }
+
+        #selstylesheet{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+
+        }
+
+
+        p{
+            text-align: center;
+        }
+
+        nav#pagenav{
+            color: #000;
+        }
+
+    #career {
+        min-height: 200px;
+        color: #ffffff;
+        padding: 1rem;
+    }
+
+
+    .career-img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+#media {
+    padding: 1rem;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 150px;
+    background-image: url(Images/frescaxkitty.jpg); 
+    width: 100%;
+}
+
+
+        blockquote {
+            font-style: italic;
+            margin-top: 1.5rem;
+            font-size: larger;
+            text-shadow: 5px solid #000 ;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            margin: 0 10px;
+            color: var(--color-primary                                                                                                                                                                                                                                                                                                                                                                                       );
+            text-decoration: none;
+        }
+
+        nav a:hover {
+        color: var(--color-accent);
+        }
+
+        section {
+        margin-top: 2rem;
+        padding: 1rem;
+        }
+
+        section h2 {
+        margin-top: 0;
+        color: #fff;
+        }
+
+        section ul {
+        list-style: none;
+        padding: 0;
+        }
+
+        section li {
+        margin-bottom: 0.5rem;
+        }
+
+        a {
+        color: #000000;
+        }
+
+        a:hover {
+        color: var(--color-accent);
+        }
+
+        footer {
+            background-color: var(--color-secondary);
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+    }
+
+    footer#subfooter{
+        background-color: none;
+    }
+
+
+    footer .container {
+        min-height: 2rem;
+    }
+
+        #subfooter {
+        padding: 1rem;
+        }
+
+        #flexsubfooter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+
+        .footerlinks {
+        display: none;
+        }
+
+        section h2{
+            color: #000;
+        }
+
+        p{
+    text-align: center;
+}
+
+        @media screen and (min-width:768px){
+            #flexsubfooter{
+                display: flex; 
+                justify-content: space-between;
+            }
+
+            .footerlinks{
+                display: block; 
+                min-width: 300px
+            }
+        }
+        
+        @media screen and (max-width: 767px) {
+        #media {
+            display: none;
+    }
+
+    #logo{
+        left: 75%;
+    }
+}
+
+        
+
+
+        @media screen and (min-width:900px){
+            #logo{
+                left: 5%;
+            }
+
+            /* #media{
+                height: 250px ;
+            } */
+
+            #pagenav{
+                top: 0px;
+                right: 0px;
+                left: auto;
+                bottom: auto;
+                background-color: none;
+            }
+        
+        }
+
+        @media screen and (min-width: 1024px) {
+    
+        /* #logo {
+            left: 75px;
+        } */
+        /* #media {
+            height: 450px;
+        } */
+    
+        #pagenav {
+            top: 0px;
+            right: 0px;
+            left: auto;
+            bottom: auto;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+
+        #media {
+        height: 600px;
+        }
+        }

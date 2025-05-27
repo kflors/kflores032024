@@ -41,7 +41,27 @@
         function updateStylesheet(){
             // alert(selStylesheet.value); 
             styleLink.href = selStylesheet.value; 
-            }
+
+        //  Save to localStorage
+            localStorage.setItem('selectedStylesheet9068', selStylesheet.value); 
+        
+        }
+
+        window.addEventListener('load', function(){
+            let savedStylesheet = localStorage.getItem('selectedStylesheet9068'); 
+        
+        // alert(savedStylesheet); 
+
+        if(savedStylesheet !== null){
+            //  Link to saved stylesheet
+            styleLink.href= savedStylesheet; 
+            // Match the dropdown box (selected) to saved stylesheet
+            selStylesheet.value = savedStylesheet; 
+        }
+        }); 
+
+
+        
 
     </script>
 </body>
